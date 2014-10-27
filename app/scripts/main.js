@@ -1,0 +1,5 @@
+
+
+$('#bigtext').bigtext();
+
+$('#bigtextdue').bigtext();
