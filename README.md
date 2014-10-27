@@ -1,3 +1,3 @@
 Pattern_Library
 ===============
-Bower init
+Bower install
