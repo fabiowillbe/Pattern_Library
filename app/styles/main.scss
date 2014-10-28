@@ -1,14 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
-@import "_font.scss";
-@import "_variabili.scss";
+@import "_font";
+@import "_variabili";
 
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap";
 // endbower
 
 // Importa stili
-@import "_tipografia.scss";
+
+
+@import "_tipografia";
 
 // Fine importa stili
 

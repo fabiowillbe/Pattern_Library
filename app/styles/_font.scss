@@ -6,10 +6,10 @@
 // Font
 
 // Esempio da Google Web Font
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700);
+@import url("http://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700");
 
-$marriweather: 				'Merriweather', serif;
-$montserrat:				'Montserrat', sans-serif;
+$marriweather: 				'Merriweather';
+$montserrat:				'Montserrat';
 
 // Esempio Font Face
 @font-face {
@@ -29,8 +29,8 @@ $montserrat:				'Montserrat', sans-serif;
 		url('../fonts/2C61CB_1_0.ttf') format('truetype');
 }
 
-$campton-light: 'Campton-LightDEMO', serif;
-$campton-bold:	'Campton-BoldDEMO', serif;
+$campton-light: 'Campton-LightDEMO';
+$campton-bold:	'Campton-BoldDEMO';
 
 
 
@@ -40,10 +40,10 @@ $campton-bold:	'Campton-BoldDEMO', serif;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  $montserrat, Helvetica, Arial, sans-serif !default;
-$font-family-serif:       $campton-light, "Times New Roman", Times, serif !default;
+$font-family-serif:       $campton-light, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+//$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+//$font-family-base:        $font-family-sans-serif !default;
 
 // ********************************
 // Font Size
