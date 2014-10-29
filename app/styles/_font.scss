@@ -3,15 +3,23 @@
 // Font
 // ********************************
 
-// Font
+// ************************************************************************************************
+// Dichiarazione Font
+// Scommentare solo i font che si intendono usare
+// ************************************************************************************************
 
-// Esempio da Google Web Font
+// ********************************
+// Merriweather & Montserrat
+// ********************************
 @import url("http://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700");
 
 $marriweather: 				'Merriweather';
 $montserrat:				'Montserrat';
+// ********************************
 
-// Esempio Font Face
+// ********************************
+// Campton-LightDEMO & Campton-BoldDEMO
+// ********************************
 @font-face {
 	font-family: 'Campton-LightDEMO';
 	src: url('../fonts/2C61CB_0_0.eot');
@@ -31,42 +39,74 @@ $montserrat:				'Montserrat';
 
 $campton-light: 'Campton-LightDEMO';
 $campton-bold:	'Campton-BoldDEMO';
-
-
-
-
-//== Typography
-//
-//## Font, line-height, and color for body text, headings, and more.
-
-$font-family-sans-serif:  $montserrat, Helvetica, Arial, sans-serif !default;
-$font-family-serif:       $campton-light, "Times New Roman", Times, serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-//$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-//$font-family-base:        $font-family-sans-serif !default;
+// ********************************
 
 // ********************************
-// Font Size
+// Open Sans
+// ********************************
+/*
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700");
+$open-sans: 'Open Sans';
+*/
+// ********************************
 
-$font-size-base:          16px !default;
+// ********************************
+// Lato
+// ********************************
+/*
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
+$lato: 'Lato';
+*/
+// ********************************
+
+// ************************************************************************************************
+// Tipografia
+// ************************************************************************************************
+
+// ********************************
+// Dichiarazione Font
+// ********************************
+
+// Font utilizzate nella pattern library
+$font-primaria: 		$montserrat, Helvetica, Arial, sans-serif;
+$font-secondaria:		$marriweather, Helvetica, Arial, sans-serif;
+
+// Font dedicata ai titoli (h1..h6)
+$font-titoli-primaria:	$campton-bold, Helvetica, Arial, sans-serif;
+$font-titoli-secondaria:$campton-bold, Helvetica, Arial, sans-serif;	
+
+// Dimensione font base
+$dimensione-font-base: 16px;
+//**********************************
+
+
+
+// ************************************************************************************************
+// Override bootstrap variavles
+// ************************************************************************************************
+
+// Font generale (testo ect...)
+$font-family-sans-serif:  $font-primaria !default;
+
+// Font Size
+$font-size-base:          $dimensione-font-base !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
+// Font titoli (h1...h6 ect...)
+$headings-font-family:	  $font-titoli-primaria;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+// Font Size titoli
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
-
-//** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.428571429 !default; // 20/14
-//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
-
-//** By default, this inherits from the `<body>`.
-//$headings-font-family:    inherit !default;
-$headings-font-family:	  $campton-bold;
-$headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+//**********************************
