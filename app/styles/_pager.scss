@@ -1,0 +1,19 @@
+// ********************************
+// Pager
+// ********************************
+
+.pagination.pager-center {
+	display: table;
+	margin: $vertical-space-mini auto 0px;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+    background-color: $primario;
+    border-color: $primario;
+    color: $terziario;
+}

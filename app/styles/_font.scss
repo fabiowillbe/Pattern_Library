@@ -11,6 +11,14 @@
 // ********************************
 // Merriweather & Montserrat
 // ********************************
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic");
+$source-sans-pro: 'Source Sans Pro';
+
+// ********************************
+
+// ********************************
+// Merriweather & Montserrat
+// ********************************
 @import url("http://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700");
 
 $marriweather: 				'Merriweather';
@@ -68,12 +76,12 @@ $lato: 'Lato';
 // ********************************
 
 // Font utilizzate nella pattern library
-$font-primaria: 		$montserrat, Helvetica, Arial, sans-serif;
-$font-secondaria:		$marriweather, Helvetica, Arial, sans-serif;
+$font-primaria: 		$source-sans-pro, Helvetica, Arial, sans-serif;
+$font-secondaria:		$source-sans-pro, Helvetica, Arial, sans-serif;
 
 // Font dedicata ai titoli (h1..h6)
-$font-titoli-primaria:	$campton-bold, Helvetica, Arial, sans-serif;
-$font-titoli-secondaria:$campton-bold, Helvetica, Arial, sans-serif;	
+$font-titoli-primaria:	$source-sans-pro, Helvetica, Arial, sans-serif;
+$font-titoli-secondaria:$source-sans-pro, Helvetica, Arial, sans-serif;	
 
 // Dimensione font base
 $dimensione-font-base: 16px;
@@ -99,7 +107,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 // Font titoli (h1...h6 ect...)
 $headings-font-family:	  $font-titoli-primaria;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    600 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 // Font Size titoli

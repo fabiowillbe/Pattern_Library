@@ -1,0 +1,104 @@
+// ********************************
+// Carousel
+// ********************************
+
+.carousel-download {
+    bottom: 20px;
+    color: $terziario;
+    position: absolute;
+    right: 30px;
+    z-index: 2;
+    a {
+	    color: $terziario;
+    }
+}
+
+.carousel-indicators.laterale {
+  bottom: inherit;
+  left: inherit;
+  list-style: none outside none;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 15;
+  padding: 0;
+  margin: 0;
+}
+.carousel-indicators.laterale li {
+  /*background-color: rgba(0, 0, 0, 0);*/
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-block;
+  height: inherit;
+  margin: 1px;
+  text-indent: 0px;
+  width: 100%;
+  padding: 4px;
+  margin: 0px 0px 10px;
+  vertical-align: top;
+}
+.carousel-indicators.laterale li:hover,
+.carousel-indicators.laterale li:focus {
+  background: $primario;
+}
+.carousel-indicators.laterale li img {
+  width: 33%;
+  float: left;
+  margin: 0% 3% 1% 0;
+}
+
+
+/* owl carousel */
+
+/* carousel caption */
+
+.owl-carousel .caption .capt-conteinar {
+	padding: 5px 15px;
+	background: rgba( $secondario, .4 );
+	display: inline-block;
+}
+
+.owl-carousel .caption .capt-conteinar h1,
+.owl-carousel .caption .capt-conteinar h2 {
+	color: $terziario;
+}
+
+
+.owl-carousel .container {
+	display: table;
+	height: inherit;
+	padding: 0;
+}
+.owl-carousel .caption {
+	display: table-cell;
+}
+.owl-carousel .caption.vertical-center {
+	vertical-align: middle;
+	padding-bottom: 3vh;
+}
+.owl-carousel .caption.vertical-top {
+	vertical-align: top;
+	padding-top: 8vh;
+}
+.owl-carousel .caption.vertical-bottom {
+	vertical-align: bottom;
+	padding-bottom: 30px;
+}
+.owl-carousel .caption.text-center {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.owl-carousel .caption.text-left {
+	padding-right: 10%;
+}
+.owl-carousel .caption.text-right {
+	padding-left: 10%;
+}
+.owl-carousel .caption h1,
+.owl-carousel .caption p,
+.owl-carousel .caption div {
+	position: relative;
+}

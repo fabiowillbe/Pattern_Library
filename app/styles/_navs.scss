@@ -1,0 +1,22 @@
+// ********************************
+// WillBe PAttern Library
+// navs [NAv - Tab - Pils]
+// ********************************
+
+// Pills
+// -------------------------
+
+.nav-pills {
+  > li {
+  	border: 1px solid $secondario;
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $terziario;
+        background-color: $secondario;
+      }
+    }
+  }
+}

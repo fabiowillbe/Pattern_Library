@@ -2,3 +2,36 @@
 // WillBe Pattern Library
 // Mixin
 // ********************************
+
+/* Imposta il colore dei placeholder dei tag input */
+@mixin input-placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder { //for newer versions of Firefox
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin background-size($type) {
+	-webkit-background-size: $type;
+    -moz-background-size: $type;
+    background-size: $type;
+    -o-background-size: $type;
+}
+
+
+// Transparent Color
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  @extend .transparent-background;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}

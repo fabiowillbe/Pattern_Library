@@ -1,0 +1,63 @@
+// ********************************
+// Hero
+// ********************************
+
+#hero {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    background-size: cover;
+}
+
+#hero.medium-hero {
+	height: 350px;
+}
+
+.static-hero {
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	@include background-size(cover);
+	position: relative;
+}
+
+.hero-caption {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	display: inline-block;
+	background: rgba($secondario, 0.4);
+	color: $terziario;
+	padding: 5px 20px;
+	h1 {
+		color: $terziario;
+	}
+	&.hero-ceter {
+		background: transparent;
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+}
+
+.owl-carousel,
+.owl-carousel .owl-wrapper-outer,
+.owl-carousel .owl-wrapper, 
+.owl-carousel .owl-item {
+	height: 100%;
+}
+
+
+#owl-example .item {
+	background-position: center 55%;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.owl-controls {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+

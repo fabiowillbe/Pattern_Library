@@ -1,0 +1,100 @@
+// ********************************
+// WillBe PAttern Library
+// itemBlock
+// ********************************
+
+// ********************************
+//  Generale
+// ********************************
+
+.itemblock {
+	display: block;
+	border: 1px solid $secondario;
+	background: $terziario;
+	margin-bottom: $vertical-space-mini;
+	.itemimage {
+	
+	}
+	.itemtext {
+		padding: 10px 10px;
+		background: $terziario;
+		overflow: auto;
+		.iteminfo {
+			display: block;
+			font-size: $font-size-small;
+		}
+		.itemtitle {
+			display: block;
+			font-size: $font-size-large;
+		}
+	}
+}
+
+a.itemblock:hover,
+a.itemblock:focus {
+	text-decoration: none;
+	border-color: $primario;
+}
+
+
+// ********************************
+//  itemBlock Prodotto
+// ********************************
+.productblock {
+	
+}
+
+// ********************************
+//  itemBlock Serie
+// ********************************
+.serieblock {
+	
+}
+
+// ********************************
+//  itemBlock Artista
+// ********************************
+.artistblock {
+	
+}
+
+// ********************************
+//  itemBlock Wallpaper
+// ********************************
+
+
+// ********************************
+//  itemBlock Feature
+// ********************************
+
+.itemblock.featureblock {
+	border: none;
+	background: transparent;
+	.itemtitle {
+		
+	}
+	.itemsubtitle h3 {
+		margin-top: 5px;
+	}
+	.itemimage {
+		margin-top: 15px;
+	}
+}
+
+// ********************************
+//  itemBlock Support
+// ********************************
+
+.itemblock.supportblock {
+	border: none;
+	background: transparent;
+	h4 {
+		color: $secondario;
+		border-bottom: 1px solid $secondario;
+		padding-bottom: 8px;
+		margin-top: 0px;
+	}
+	h5 {
+		color: $testo;
+	}
+}

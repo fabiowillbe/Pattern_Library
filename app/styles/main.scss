@@ -1,16 +1,28 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome/fonts";
+
 
 // Variables & mixing
 @import "_font";
 @import "_variabili";
+@import "_mixin";
 // Fine Variables & mixing
 
 // Bootstrap import
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "font-awesome/scss/font-awesome";
 // Fine Bootstrap import
 
 // Importa stili
 @import "_tipografia";
+@import "_navbar";
+@import "_hero";
+@import "_row-element";
+@import "_itemblock";
+@import "_footer";
+@import "_pager";
+@import "_navs";
+@import "_carousel";
 // Fine importa stili
 
 // Pattern Library Scaffolding

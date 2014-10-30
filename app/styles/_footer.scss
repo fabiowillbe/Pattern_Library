@@ -1,0 +1,58 @@
+// ********************************
+// Footer
+// ********************************
+
+footer.page-footer {
+	background: $secondario;
+	color: $terziario;
+	a {
+		color: $terziario;
+		&:hover,
+		&focus {
+			text-decoration: none;
+			color: $primario;
+		} 
+	}
+	#primary-footer {
+		ul {
+			padding-left: 14px;
+		}
+		.footer-column {
+		  min-height: 250px;
+		}
+		.footer-centro {
+		  border-left: 1px solid $terziario;
+		  border-right: 1px solid $terziario;
+		}
+		.foot-cont {
+		    display: table;
+		    float: none;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	}
+	#secondary-footer {
+		font-size: $font-size-small;
+		li.yt a:hover,
+		li.yt a:focus {
+			color:	#cc181e;
+		}
+		li.fb a:hover,
+		li.fb a:focus {
+			color:	#4668B3;
+		}
+		li.gp a:hover,
+		li.gp a:focus {
+			color:	#DE5745;
+		}
+		li.tw a:hover,
+		li.tw a:focus {
+			color:	#2FBBED;
+		}
+		li.sc a:hover,
+		li.sc a:focus {
+			color:	#ff3e00;
+		}
+	}
+}
+

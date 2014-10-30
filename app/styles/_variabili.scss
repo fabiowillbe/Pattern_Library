@@ -31,17 +31,34 @@ $grigio-antracite:	#9e9e9e;
 $grigio-perla:		#f2f2f2;
 $sabbia:			#EAE2D6;
 
+// SET KAWAI
+$kawai-prim:		#EA221B;
+$kawai-sec:			#191919;
 
 
-// Pattern Color
-$primario:			$legno-scuro;
-$secondario:		$verde-vintage;
+// ********************************
+// Colori
+// ********************************
+$primario:			$kawai-prim;
+$secondario:		$kawai-sec;
 $terziario:			$bianco;
 $testo:				$grigio-antracite;
 $fondo:				$grigio-perla;
 $altro:				$fumo;
 
+$colorebellowallpaper:		$grigio-perla;
+$colorebellowallpaperdue:	$grigio-antracite;
 
+// ********************************
+// Scaffolding
+// ********************************
+$body-bg:               $fondo !default;
+$text-color:            $testo !default;
+$link-color:            $secondario !default;
+$link-hover-color:      darken($secondario, 15%) !default;
+// Spaziature verticali
+$vertical-space: 50px;
+$vertical-space-mini: 25px;
 
 
 // ********************************
@@ -78,6 +95,11 @@ $text-color:            $testo !default;
 $link-color:            $secondario !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($secondario, 15%) !default;
+
+// Set Up border radius
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 
 
