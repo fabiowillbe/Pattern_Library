@@ -378,24 +378,9 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    },
-    svgstore: {
-      options: {
-        cleanup : true,
-        prefix : 'shape-', // This will prefix each <g> ID
-        svg: {
-          viewBox : '0 0 100 100'
-        }
-      },
-      default : {
-       files: {
-          '<%= config.dist %>/svg-defs.svg': ['<%= config.app %>/svgs/*.svg']
-        }
-      }
     }
   });
-  
-  grunt.loadNpmTasks('grunt-svgstore');
+
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {

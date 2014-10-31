@@ -9,6 +9,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/qunit/qunit/qunit.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -27,9 +29,18 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    
-    <div id="utilityBar">
+    <svg viewBox="0 0 100 100"><symbol viewBox="0 0 123.999 37.069" id="shape-furcht"><title>furcht</title> <g> <path d="M32.53,23.831c0,5.346-0.288,7.536-4.209,7.536c-3.36,0-4.633-2.139-4.633-6.467V10.032h-7.139h-0.091h-4.899V8.453
+		c0-2.189,0.815-3.004,2.749-3.004c0.917,0,1.782,0.051,2.648,0.152V0.204C15.734,0.153,14.41,0,13.137,0
+		C7.23,0,4.328,3.361,4.328,7.995v2.036H0v4.837h4.328v21.488h7.231V14.868h4.899v11.355c0,6.518,1.935,10.846,9.624,10.846
+		c3.055,0,4.82-0.497,6.653-3.451h0.153v2.738h6.874V10.032h-7.23v13.799L32.53,23.831L32.53,23.831z"/> <path d="M69.082,31.621c-4.532,0-6.008-4.532-6.008-8.3c0-3.869,1.528-8.554,6.161-8.554c3.005,0,4.889,1.579,5.348,4.532h7.077
+		c-0.457-6.721-6.161-9.98-12.374-9.98c-5.367,0-9.29,2.386-11.469,6.188l0.047-6.188c-3.513,0-6.857,2.291-8.18,5.601h-0.102
+		v-4.888h-6.874v26.325h7.23V24.492c0-4.545,2.489-8.297,7.582-8.439c-1.101,2.151-1.676,4.71-1.676,7.522
+		c0,7.892,5.346,13.493,13.29,13.493c6.925,0,11.762-3.819,12.68-10.794h-6.976C74.378,29.483,72.443,31.621,69.082,31.621z"/> <path d="M123.999,14.869v-4.837h-5.296V2.14h-7.23v7.892h-8.962c-1.232-0.464-2.735-0.712-4.57-0.712
+		c-2.698,0-5.856,1.425-7.689,4.379H90.1V0.002h-7.23v36.356h7.23V22.559c0-5.346,1.68-7.536,5.601-7.536
+		c3.36,0,4.633,2.139,4.633,6.467v14.868h7.23V20.166c0-1.99-0.182-3.774-0.652-5.296h4.56V30.4c0,5.245,3.869,6.263,8.299,6.263
+		c1.426,0,3.004-0.051,4.227-0.255v-5.652c-0.764,0.152-1.477,0.204-2.241,0.204c-2.444,0-3.054-0.611-3.054-3.055V14.87
+		L123.999,14.869L123.999,14.869z"/> </g> </symbol></svg>
+			<div id="utilityBar">
     	<div class="container-fluid">
     		<div class="pull-left">
 	    		<ul class="social-list">
@@ -41,7 +52,11 @@
 	    		</ul>
 	    	</div>
 	    	<div class="pull-right">
-	    		<a class="logo" href="#"><img class="logo-furcht" alt="Furcht" src="images/logo-furcht.svg"></a>
+	    		<a class="" href="#">
+	    			<svg class="shape-logo-furcht">
+  						<use xlink:href="#shape-furcht"></use>
+					</svg>
+				</a>
 	    	</div>
 	    	<div class="pull-right">
 	    		
@@ -451,8 +466,8 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    
-    <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="bower_components/qunit/qunit/qunit.js"></script>
+    <script src="bower_components/bigtext/dist/bigtext.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
