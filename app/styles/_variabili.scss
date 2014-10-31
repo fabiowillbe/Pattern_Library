@@ -31,16 +31,22 @@ $grigio-antracite:	#9e9e9e;
 $grigio-perla:		#f2f2f2;
 $sabbia:			#EAE2D6;
 
-// SET KAWAI
-$kawai-prim:		#EA221B;
-$kawai-sec:			#191919;
+// SET KAWAI Literal -> espresso in lettere
+$red-kawai:			#EA221B;
+$black-kawai:		#191919;
+
+
+
+// SET KAWAI "per fabio" Usiamo sempre le variabili espresse in lettere direttamente nelle variabili colore semantiche
+// $kawai-prim:		$red-kawai;
+// $kawai-sec:		$black-kawai;
 
 
 // ********************************
-// Colori
+// Colori semantici
 // ********************************
-$primario:			$kawai-prim;
-$secondario:		$kawai-sec;
+$primario:			$red-kawai;
+$secondario:		$black-kawai;
 $terziario:			$bianco;
 $testo:				$grigio-antracite;
 $fondo:				$grigio-perla;
