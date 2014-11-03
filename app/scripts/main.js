@@ -3,10 +3,10 @@
 $(document).ready(function() {
 
 
-/*	$('#bigtext').bigtext();
+/**/	$('#bigtext').bigtext();
 	
-	$('#bigtextdue').bigtext();
-*/
+		$('#bigtextdue').bigtext();
+
 	
 	/**********************/
 	/* NAVBAR - AFFIX TOP */
