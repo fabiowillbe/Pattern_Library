@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
 
 
@@ -12,7 +14,7 @@ $(document).ready(function() {
 	var checkScroll = $(window).scrollTop();
 	var affixTrigger = $('#hero').height() - $('#utilityBar').outerHeight();
 	if ( checkScroll > affixTrigger ) {
-		$('#utilityBar').addClass("colored");
+		$('#utilityBar').addClass('colored');
 	}
 		
 	$('#brandBar').affix({
@@ -20,13 +22,13 @@ $(document).ready(function() {
 			top: $('#hero').height() - $('#utilityBar').outerHeight()
 		}
 	});
-	$("#brandBar").on('affixed.bs.affix', function(){
-		$('#utilityBar').addClass("colored");
+	$('#brandBar').on('affixed.bs.affix', function(){
+		$('#utilityBar').addClass('colored');
 	});
 	
 	
-	$("#brandBar").on('affixed-top.bs.affix', function(){
-		$('#utilityBar').removeClass("colored");
+	$('#brandBar').on('affixed-top.bs.affix', function(){
+		$('#utilityBar').removeClass('colored');
 	});
 	/* FINE - NAVBAR - AFFIX TOP */
 	
@@ -42,7 +44,7 @@ $(document).ready(function() {
 	/**********************/
 	
 	
-	$("#owl-example").owlCarousel({
+	$('#owl-example').owlCarousel({
 		 navigation : true, // Show next and prev buttons
 		 slideSpeed : 300,
 		 paginationSpeed : 400,

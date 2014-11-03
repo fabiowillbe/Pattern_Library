@@ -137,3 +137,23 @@
 #utilityBar.colored {
 	background: $primario;
 }
+
+.shape-logo-kawai {
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	fill: #ffffff;
+}
+
+.shape-logo-furcht {
+  display: inline-block;
+  width: 84px;
+  height:25px;
+  fill: $primario;
+}
+
+#utilityBar.colored .shape-logo-furcht {
+	fill: $terziario;
+}
+
+
