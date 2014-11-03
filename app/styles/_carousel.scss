@@ -1,5 +1,5 @@
 // ********************************
-// Carousel
+// Bootstrap Carousel
 // ********************************
 
 .carousel-download {
@@ -50,8 +50,9 @@
   margin: 0% 3% 1% 0;
 }
 
-
-/* owl carousel */
+// ********************************
+/* Owl carousel */
+// ********************************
 
 /* carousel caption */
 
@@ -62,8 +63,11 @@
 }
 
 .owl-carousel .caption .capt-conteinar h1,
-.owl-carousel .caption .capt-conteinar h2 {
+.owl-carousel .caption .capt-conteinar h2,
+.owl-carousel .caption .capt-conteinar h3 {
 	color: $terziario;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -102,3 +106,40 @@
 .owl-carousel .caption div {
 	position: relative;
 }
+
+/* carousel controls */
+
+.owl-controls {
+  position: static;
+}
+
+.owl-controls .owl-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  .owl-prev {
+    position: absolute;
+    left: 0;
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+  }
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev,
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  background: $secondario;
+}
+
+#hero .owl-theme .owl-controls .owl-page span {
+  background: $terziario;
+}
+
+.owl-controls .owl-pagination {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+
+
