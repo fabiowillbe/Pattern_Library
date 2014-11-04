@@ -227,5 +227,47 @@ $(document).ready(function() {
 
 	/* FINE OWL CAROUSEL  */
 	/**********************/
+
+	/**********************/
+	/*  ISOTOPE PRODUCT   */
+	var $container = $('.items');
+
+	/*$container.imagesLoaded(function () {
+		$container.isotope({
+			itemSelector: '.item'
+		});
+	});*/
+	
+	var resizeTimer;
+	
+	function resizeFunction() {
+		$container.isotope('reLayout');
+	}
+	
+	$(window).resize(function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(resizeFunction, 100);
+	});
+	
+	$('#isotopeProduct .isotope-filter li a').click(function () {
+		$('.isotope-filter li a').removeClass('active');
+		$(this).addClass('active');
+		
+		var selector = $(this).attr('data-filter');
+	
+		$container.isotope({
+			filter: selector
+		});
+		
+		return false;
+		
+	});
+	/***********************/
+	/* END ISOTOPE PRODUCT */
+
+
+
+
+
 	
 });

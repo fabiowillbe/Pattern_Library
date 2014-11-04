@@ -29,6 +29,9 @@
 			font-size: $font-size-large;
 		}
 	}
+	&.no-border {
+		border: none;
+	}
 }
 
 a.itemblock:hover,
@@ -50,6 +53,34 @@ a.itemblock:focus {
 // ********************************
 .serieblock {
 	
+}
+
+// ********************************
+//  itemBlock News
+// ********************************
+.newsblock {
+	.itemTitle {
+		color: $primario;
+		margin: 0px 0px 3px;
+		a {
+			color: $primario;
+		}
+		a:hover,
+		a:focus {
+			color: $secondario;
+			text-decoration: none;
+		}
+	}
+	.itemDate {
+		font-size: $font-size-small;
+		font-weight: 600;
+		color: $secondario;
+	}
+	.itemAuthor {
+		font-size: $font-size-small;
+		font-weight: 600;
+		color: $secondario;
+	}
 }
 
 // ********************************
@@ -116,4 +147,42 @@ a.itemblock:focus {
 		color:#9E9E9E;
 		padding:9px;
 	}
+	&.no-border {
+		border: none;
+	}
+	&.no-background {
+		background: transparent;
+	}
 }
+
+
+
+ul.items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.isotope-filter {
+	list-style: none;
+	li {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+		background: $secondario;
+		color: $terziario;
+		padding: 4px 10px;
+		&.active,
+		&:hover {
+			background: $primario;
+			text-decoration: none;
+		} 
+	}
+}
+
+
+
+
+
+

@@ -78,12 +78,14 @@
 			width: 120px;
 			background: transparent;
 			color: $primario;
+			transition: 300ms ease-Out;
 			@include input-placeholder($terziario);
 			&:focus {
 				background: $terziario;
 				border-color: $terziario;
 				box-shadow: none;
 				@include input-placeholder($primario);
+				transition: 300ms ease-Out;
 			}
 		}
 		.input-group-btn .btn {
@@ -132,8 +134,13 @@
 	}
 }
 
+#utilityBar {
+	transition: 600ms ease-Out;
+}
+
 #utilityBar.colored {
 	background: $primario;
+	transition: 600ms ease-Out;
 }
 
 .shape-logo-kawai {

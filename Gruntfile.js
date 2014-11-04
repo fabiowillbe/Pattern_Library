@@ -68,11 +68,6 @@ module.exports = function (grunt) {
       },
 
 
-      nunjucks: {
-            files: '<%= config.app %>/template/*',
-            tasks: ['nunjucks']
-      }
-
 
 
     },
@@ -404,21 +399,11 @@ module.exports = function (grunt) {
     },
 
 
-    nunjucks: {
-        precompile: {
-            baseDir: '<%= config.app %>/template/',
-            src: '<%= config.app %>/template/*',
-            dest: '<%= config.app %>/template/output/template.js'
-        }
-    }
-
-
-
+    
   });
   
   grunt.loadNpmTasks('grunt-svgstore');
-
-  grunt.loadNpmTasks('grunt-nunjucks');
+  
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
