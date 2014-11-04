@@ -25,11 +25,13 @@ $(document).ready(function() {
 	});
 	$('#brandBar').on('affixed.bs.affix', function(){
 		$('#utilityBar').addClass('colored');
+		$('#intro').css('padding-top', $('#utilityBar').outerHeight());
 	});
 	
 	
 	$('#brandBar').on('affixed-top.bs.affix', function(){
 		$('#utilityBar').removeClass('colored');
+		$('#intro').css('padding-top', 0);
 	});
 	/* FINE - NAVBAR - AFFIX TOP */
 	
