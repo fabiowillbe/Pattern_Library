@@ -1,0 +1,306 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/qunit/qunit/qunit.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!-- end navbar-toggle -->
+      <a class="navbar-brand" href="#">PL</a>
+    </div><!-- end navbar-header -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="index.html">Home</a></li>
+        <li class=""><a href="tipografia.html">Tipografia</a></li>
+        <li class=""><a href="font.html">Font</a></li>
+        <li class=""><a href="navbar.html">Navbar</a></li>
+
+        <li class=""><a href="contenitori.html">Contenitori</a></li>
+        <li class="active"><a href="form-btn.html">Form e Pulsanti</a></li>
+        <li class=""><a href="table.html">Tabelle</a></li>
+        <li class=""><a href="media.html">Media</a></li>
+        <li class=""><a href="layout.html">Layout</a></li>
+      </ul>
+    </div><!-- end navbar-collapse -->
+    </div><!-- container -->
+  </div><!-- end navbar -->
+
+
+  <div class="container">
+      <div class="jumbotron">
+        <h1>Form & Btn</h1>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-primario row-vert-padd">
+      <div class="col-xs-12">
+        <h1 class="patliblem titolo">Form element</h1>
+      </div>
+      <div class="col-xs-12">
+        <h5 class="patliblem subtit">Label, input text, textarea</h5>
+        <form role="form">
+          <label>Form Item Label</label>
+          <br /><br />
+          <input type="text" class="form-control" placeholder="Text input">
+          <br />
+          <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
+          <br />
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h5 class="patliblem subtit">Cehckbox, radio</h5>
+        <form role="form">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Checkbox - Option 1
+            </label>
+          </div>
+          <div class="checkbox ">
+            <label>
+              <input type="checkbox" value="" >
+              Checkbox - Option 2
+            </label>
+          </div>
+          <div class="checkbox disabled">
+            <label>
+              <input type="checkbox" value="" disabled>
+              Checkbox - Option 3 - Disabled
+            </label>
+          </div>
+
+          <br /><br />
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Radio - Option 1
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Radio - Option 2
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+              Radio - Option 3 - disabled
+            </label>
+          </div>
+          <br />
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox - Option 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> Checkbox - Option 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Checkbox - Option 3
+          </label>
+          <br /><br />
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Radio - Option 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Radio - Option 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Radio - Option 3
+          </label>
+
+        </form>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-6">
+        <h5 class="patliblem subtit">Select (single and multiple with otpgroup)</h5>
+        <form role="form">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <br /><br />
+          <select multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <optgroup label="Group 1">
+              <option>3</option>
+              <option>4</option>
+            </optgroup>
+            <option>5</option>
+          </select>
+        </form>
+      </div>
+
+
+      <div class="col-xs-12">
+        <h5 class="patliblem subtit">Fieldset</h5>
+        <form role="form">
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="row row-primario row-vert-padd-top">
+      <div class="col-xs-12">
+        <h1 class="patliblem titolo">Buttons</h1>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h5 class="patliblem subtit">Buttons type</h5>
+        <p>
+          <!-- Standard button -->
+          <button type="button" class="btn btn-default">Default</button>
+          Default button (.btn .btn-default)
+        </p>
+        <p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        Primary button (.btn .btn-primary)
+        </p>
+        <p>
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">Success</button>
+        Success button (.btn .btn-success)
+        </p>
+        <p>
+        <!-- Contextual button for informational alert messages -->
+        <button type="button" class="btn btn-info">Info</button>
+        Info button (.btn .btn-info)
+        </p>
+        <p>
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-warning">Warning</button>
+        Wrning button (.btn .btn-warning)
+        </p>
+        <p>
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-danger">Danger</button>
+        Danger button (.btn .btn-danger)
+        </p>
+        <p>
+        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+        <button type="button" class="btn btn-link">Link</button>
+        Link button (.btn .btn-link)
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <h5 class="patliblem subtit">Buttons dimension</h5>
+        <p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+          <button type="button" class="btn btn-default btn-lg">Large button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary">Default button</button>
+          <button type="button" class="btn btn-default">Default button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          <button type="button" class="btn btn-default btn-sm">Small button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+          <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+      <div class="footer">
+        <p>WillBe team</p>
+      </div>
+  </div>
+
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/qunit/qunit/qunit.js"></script>
+    <script src="/bower_components/bigtext/dist/bigtext.js"></script>
+
+    <script src="/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="/scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

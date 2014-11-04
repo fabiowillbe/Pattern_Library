@@ -20,10 +20,7 @@
 }
 
 .navbar-brand {
-	padding: 12px 15px;
-	.logo-kawai g path {
-		fill: $terziario;
-	}
+	padding: 18px 15px;
 }
 
 .navbar-centrato {
@@ -140,16 +137,16 @@
 
 .shape-logo-kawai {
 	display: inline-block;
-	width: 180px;
-	height: 36px;
-	fill: #ffffff;
+	width: 125px; /* 180px */
+	height: 25px; /* 36px */
+	fill: $primario;
 }
 
 .shape-logo-furcht {
   display: inline-block;
   width: 84px;
   height:25px;
-  fill: $primario;
+  fill: $terziario;
 }
 
 #utilityBar.colored .shape-logo-furcht {

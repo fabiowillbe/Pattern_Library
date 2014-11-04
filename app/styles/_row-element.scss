@@ -12,6 +12,7 @@
 
 .row-secondario {
 	background: $colorebellowallpaperdue;
+	color: $terziario;
 	h2 {
 		color: $terziario;
 	}
@@ -19,6 +20,23 @@
 
 .row-terziario {
 	background: $terziario;
+}
+
+.row-quattro {
+	background: $colorebellowallpapertre;
+	color: $terziario;
+	h2,
+	h5 {
+		color: $terziario;
+	}
+}
+
+.row-cinque {
+	background: $colorebellowallpaperquat;
+	color: $terziario;
+	h2 {
+		color: $terziario;
+	}
 }
 
 
@@ -57,10 +75,3 @@
 }
 
 
-// ********************************
-//  TreeBox
-// ********************************
-
-#threebox .thumbnail {
-	margin-bottom: 0;	
-}

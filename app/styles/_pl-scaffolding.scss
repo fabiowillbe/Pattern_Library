@@ -1,3 +1,16 @@
+
+a#stiyleGuideLink {
+	display: inline-block;
+	color: $terziario;
+	background: $primario;
+	position: fixed;
+	top: 110px;
+	left: 0px;
+	z-index: 3;
+	padding: 3px 8px;
+}
+
+
 h1.patliblem.titolo {
   color: #000;
   font-size: 23px;

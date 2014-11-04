@@ -39,12 +39,12 @@
     </div><!-- end navbar-header -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class=""><a href="index.html">Home</a></li>
         <li class=""><a href="tipografia.html">Tipografia</a></li>
         <li class=""><a href="font.html">Font</a></li>
         <li class=""><a href="navbar.html">Navbar</a></li>
 
-        <li class=""><a href="container.html">Contenitori</a></li>
+        <li class="active"><a href="container.html">Contenitori</a></li>
         <li class=""><a href="form-btn.html">Form e Pulsanti</a></li>
         <li class=""><a href="table.html">Tabelle</a></li>
         <li class=""><a href="media.html">Media</a></li>
@@ -56,25 +56,122 @@
 
 
   <div class="container">
-
       <div class="jumbotron">
-        <h1>Style Guide</h1>
+        <h1>Container</h1>
       </div>
-      
+  </div>
 
-
-
-
-
-
-
-
-      <div class="footer">
-        <p>WillBe team</p>
+  <div class="container">
+    <div class="row row-primario row-vert-padd">
+      <div class="col-xs-12">
+        <h1 class="patliblem titolo">Row container</h1>
       </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row row-primario row-vert-padd">
+      <div class="col-xs-12 row-title">
+        <h5>Container row - Type 1 - Vertical padding standard</h5>
+      </div>
+      <div class="col-xs-12">
+        class: .row-primario<br />
+        background-variable: $colorebellowallpaper<br />
+        vertical-padding-class: .row-vert-padd<br />
+        vertical-padding-variable: $vertical-space<br />
+      </div>
+    </div>
+    <div class="row row-secondario row-vert-padd-mini">
+      <div class="col-xs-12 row-title">
+        <h5>Container row - Type 2 - Vertical padding mini</h5>
+      </div>
+      <div class="col-xs-12">
+        class: .row-secondario<br />
+        background-variable: $colorebellowallpaper<br />
+        vertical-padding-class: .row-vert-padd<br />
+        vertical-padding-variable: $vertical-space-mini<br />
+      </div>
+    </div>
+    <div class="row row-terziario row-top-padd row-bot-padd-mini">
+      <div class="col-xs-12 row-title">
+        <h5>Container row - Type 3 - Vertical top padding standard - bottom padding mini</h5>
+      </div>
+      <div class="col-xs-12">
+        class: .row-terziario<br />
+        background-variable: $colorebellowallpaper<br />
+        vertical-padding-class: .row-top-padd .row-bot-padd-mini<br />
+        vertical-padding-variable: $vertical-space - $vertical-space-mini<br />
+      </div>
+    </div>
+    <div class="row row-quattro row-top-padd-mini row-bot-padd">
+      <div class="col-xs-12 row-title">
+        <h5>Container row - Type 4 - Vertical top padding mini - bottom padding standard</h5>
+      </div>
+      <div class="col-xs-12">
+        class: .row-terziario<br />
+        background-variable: $colorebellowallpaper<br />
+        vertical-padding-class: .row-top-padd-mini .row-bot-padd<br />
+        vertical-padding-variable: $vertical-space-mini - $vertical-space<br />
+      </div>
+    </div>
+    <div class="row row-cinque row-vert-padd">
+      <div class="col-xs-12 row-title">
+        <h5>Container row - Type 5 - Vertical padding standard</h5>
+      </div>
+      <div class="col-xs-12">
+        class: .row-terziario<br />
+        background-variable: $colorebellowallpaper<br />
+        vertical-padding-class: .row-vert-padd<br />
+        vertical-padding-variable: $vertical-space<br />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row row-primario row-vert-padd-top">
+      <div class="col-xs-12">
+        <h1 class="patliblem titolo">Box container</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5 class="patliblem subtit">Threebox container</h5>
+        <div class="trbox-container">
+          <div class="caption">
+            Threebox container
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5 class="patliblem subtit">ItemBlock container + caption</h5>
+        <a href="#" class="itemblock productblock">
+          <div class="itemtext">
+              <span class="iteminfo">itemText Info</span>
+            <span class="itemtitle">itemText Title</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="row row-vert-padd">
+
+    </div>
 
   </div>
 
+
+
+
+  <div class="container">
+      <div class="footer">
+        <p>WillBe team</p>
+      </div>
+  </div>
 
 
 

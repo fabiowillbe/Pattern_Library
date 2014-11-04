@@ -10,7 +10,8 @@
 .itemblock {
 	display: block;
 	border: 1px solid $secondario;
-	background: $terziario;
+	/*background: $terziario;*/
+	background: transparent;
 	margin-bottom: $vertical-space-mini;
 	.itemimage {
 	
@@ -96,5 +97,23 @@ a.itemblock:focus {
 	}
 	h5 {
 		color: $testo;
+	}
+}
+
+
+// ********************************
+//  TreeBox
+// ********************************
+
+.trbox-container {
+	margin-bottom: 0;
+	transition:all 0.2s ease-in-out;
+	background: $fondo;
+	border: 1px solid $testo;
+	display:block;
+	padding: 4px;
+	.caption {
+		color:#9E9E9E;
+		padding:9px;
 	}
 }

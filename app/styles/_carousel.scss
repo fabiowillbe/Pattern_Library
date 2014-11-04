@@ -62,13 +62,24 @@
 	display: inline-block;
 }
 
-.owl-carousel .caption .capt-conteinar h1,
-.owl-carousel .caption .capt-conteinar h2,
-.owl-carousel .caption .capt-conteinar h3 {
-	color: $terziario;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.owl-carousel .caption .capt-conteinar {
+	h1,
+	h2,
+	h3 {
+		color: $terziario;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	h2 {
+		font-size: $font-size-carousel-one;
+	}
+	
+	h3 {
+		font-size: $font-size-carousel-two;
+	}
 }
+
 
 
 .owl-carousel .container {
@@ -81,7 +92,7 @@
 }
 .owl-carousel .caption.vertical-center {
 	vertical-align: middle;
-	padding-bottom: 3vh;
+	padding-bottom: 0;
 }
 .owl-carousel .caption.vertical-top {
 	vertical-align: top;

@@ -25,16 +25,33 @@
     <![endif]-->
 
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="index.html">Home</a></li>
-          <li class=""><a href="tipografia.html">Tipografia</a></li>
-          <li class="active"><a href="font.html">Font</a></li>
-        </ul>
-        <h3 class="text-muted">PL</h3>
-      </div>
 
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!-- end navbar-toggle -->
+      <a class="navbar-brand" href="#">PL</a>
+    </div><!-- end navbar-header -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="index.html">Home</a></li>
+        <li class=""><a href="tipografia.html">Tipografia</a></li>
+        <li class="active"><a href="font.html">Font</a></li>
+        <li class=""><a href="navbar.html">Navbar</a></li>
+      </ul>
+    </div><!-- end navbar-collapse -->
+    </div><!-- container -->
+  </div><!-- end navbar -->
+
+
+
+    <div class="container">
+      
       <div class="jumbotron">
         <h1>Font</h1>
       </div>
@@ -42,40 +59,29 @@
 
       <h1 class="patliblem titolo">Font Family</h1>
 
-      <div class="patliblem box">
-        <h1 class="marriweather">Merriweather</h1>
+      <div class="box">
+        <h1 class="">Source Sans Pro</h1>
+        <small>Font size: 41px - Line height: 45px - Weight: 600 </small>
       </div>
-      <div class="patliblem box">
-        <h1 class="montserrat">Montserrat</h1>
+      <div class="box">
+        <h2 class="">Source Sans Pro</h2>
+        <small>Font size: 34px - Line height: 37px - Weight: 600 </small>
       </div>
-      <div class="campton-light box">
-        <h1 class="montserrat">Campton Light</h1>
+      <div class="box">
+        <h3 class="">Source Sans Pro</h3>
+        <small>Font size: 28px - Line height: 30px - Weight: 600 </small>
       </div>
-      <div class="campton-bold box">
-        <h1 class="montserrat">Campton Bold</h1>
+      <div class="box">
+        <h4 class="">Source Sans Pro</h4>
+        <small>Font size: 20px - Line height: 22px - Weight: 600 </small>
       </div>
-      
-
-      <h1 class="patliblem titolo">Esempi</h1>
-
-      <div class="patliblem box">
-
-        <div id="bigtext">
-          <h1>BIGTEXT</h1>
-          <h2>Makes Text Big</h2>
-        </div>
-
-      </div>
-
-      <div class="patliblem box">
-
-        <div id="bigtextdue">
-          <h3>LOREM IPSUM</h1>
-          <h4>dolor sit amet</h2>
-        </div>
-        
+      <div class="box">
+        <h5 class="">Source Sans Pro</h5>
+        <small>Font size: 16px - Line height: 17px - Weight: 600 </small>
       </div>
       
+
+         
 
 
 
@@ -107,18 +113,10 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="/scripts/main.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="/scripts/main.js"></script>
-        <!-- endbuild -->
 </body>
 </html>

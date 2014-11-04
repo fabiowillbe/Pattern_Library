@@ -3,9 +3,10 @@
 $(document).ready(function() {
 
 
-/**/	$('#bigtext').bigtext();
-	
-		$('#bigtextdue').bigtext();
+	$('#stiyleGuideLink').tooltip();
+
+    $('#bigtext').bigtext();
+    $('#bigtextdue').bigtext();
 
 	
 	/**********************/
