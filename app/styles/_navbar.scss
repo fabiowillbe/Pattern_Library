@@ -197,8 +197,18 @@
 }
 
 #utilityBar.colored {
+	color: $secondario;
 	background: $grigio-perla;
 	transition: 600ms ease-Out;
+	.social-list {
+		li a {
+			color: $secondario;
+			&:hover,
+			&:focus {
+				color: $terziario;
+			}
+		}
+	}
 }
 
 .shape-logo-kawai {
@@ -216,7 +226,7 @@
 }
 
 #utilityBar.colored .shape-logo-furcht {
-	fill: $terziario;
+	fill: $secondario;
 }
 
 

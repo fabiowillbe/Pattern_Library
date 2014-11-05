@@ -243,7 +243,7 @@ $(document).ready(function() {
 	var resizeTimer;
 	
 	function resizeFunction() {
-		$container.isotope('reLayout');
+		$container.isotope('layout');
 	}
 	
 	$(window).resize(function() {
