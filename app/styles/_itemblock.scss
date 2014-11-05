@@ -186,13 +186,13 @@ ul.isotope-filter {
 	}
 	a {
 		display: inline-block;
-		background: $secondario;
-		color: $terziario;
-		padding: 4px 10px;
+		//background: $secondario;
+		//color: $terziario;
+		//padding: 4px 10px;
 		&.active,
 		&:hover {
-			background: $primario;
-			text-decoration: none;
+			//background: $primario;
+			//text-decoration: none;
 		} 
 	}
 }

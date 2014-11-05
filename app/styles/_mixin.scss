@@ -46,3 +46,45 @@
 @mixin textChangeColor ($time, $animation) {
   transition: color $time $animation;
 }
+
+// *******************************************************************
+// VARIAZIONE PULSANTI BASE - VEDI _buttons.scss in MIXIN BOOTSTRAP 3
+// *******************************************************************
+@mixin button-variant-kawai($color, $background) {
+  color: $background;
+  background-color: transparent;
+  border: 1px solid $background;
+  transition: 300ms ease;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $background;
+        border-color: $background;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $background;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}

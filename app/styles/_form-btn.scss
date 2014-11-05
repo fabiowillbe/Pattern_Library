@@ -18,3 +18,38 @@ fieldset {
 // ********************************
 //  Btn
 // ********************************
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  @include button-variant-kawai($btn-default-color, $btn-default-bg);
+}
+.btn-primary {
+  @include button-variant-kawai($btn-primary-color, $btn-primary-bg);
+}
+// Success appears as green
+.btn-success {
+  @include button-variant-kawai($btn-success-color, $btn-success-bg);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-variant-kawai($btn-info-color, $btn-info-bg);
+}
+// Warning appears as orange
+.btn-warning {
+  @include button-variant-kawai($btn-warning-color, $btn-warning-bg);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-variant-kawai($btn-danger-color, $btn-danger-bg);
+}
+
+// KAwai buttons
+// --------------------------------------------------
+.btn-kawai-default {
+  @include button-variant-kawai($btn-primary-color, $primario);
+}
+.btn-kawai-primary {
+  @include button-variant-kawai($btn-primary-color, $secondario);
+}
