@@ -20,10 +20,10 @@
 }
 
 @mixin background-size($type) {
+  background-size: $type;
 	-webkit-background-size: $type;
-    -moz-background-size: $type;
-    background-size: $type;
-    -o-background-size: $type;
+  -moz-background-size: $type;
+  -o-background-size: $type;
 }
 
 
@@ -34,4 +34,15 @@
   @extend .transparent-background;
   background-color: $rgba;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+// ImageHoverAnimation
+@mixin imageHoverAnimation ($scale, $time, $animation) {
+  transform: scale($scale);
+  transition: $time $animation;
+}
+
+// TextChangeColor
+@mixin textChangeColor ($time, $animation) {
+  transition: color $time $animation;
 }

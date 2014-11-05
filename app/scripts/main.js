@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 
-	$('#stiyleGuideLink').tooltip();
+	$('.stiyleGuideLink a').tooltip();
 
     $('#bigtext').bigtext();
     $('#bigtextdue').bigtext();
@@ -31,7 +31,7 @@ $(document).ready(function() {
 	
 	$('#brandBar').on('affixed-top.bs.affix', function(){
 		$('#utilityBar').removeClass('colored');
-		$('#intro').css('padding-top', 0);
+		$('#main').css('padding-top', 0);
 	});
 	/* FINE - NAVBAR - AFFIX TOP */
 	

@@ -26,14 +26,18 @@
 	left: 20px;
 	bottom: 20px;
 	display: inline-block;
-	background: rgba($secondario, 0.4);
-	color: $terziario;
-	padding: 5px 20px;
+	padding: 5px 15px;
+	background: rgba( $secondario, .4 );
+	display: inline-block;
+	color: terziario;
 	h1 {
 		color: $terziario;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: $font-size-carousel-one;
+		font-weight: 300;
 	}
 	&.hero-ceter {
-		background: transparent;
 		width: 100%;
 		left: 0;
 		text-align: center;
@@ -61,3 +65,8 @@
 	bottom: 0;
 }
 
+@media (max-width: 768px) {
+	.hero-caption h1 {
+		//font-size: 12px;
+	}
+}

@@ -32,6 +32,64 @@
 	clear: none;
 }
 
+.navbar-nav > li > a {
+	font-size: $font-size-navbar;
+}
+
+.navbar-nav {
+	>li {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	> li > a {
+	  padding-left: 0px;
+	  padding-right: 0px;
+	  font-weight: 300;
+	  text-transform: uppercase;
+	  font-size: $font-size-navbar;
+	  //transition: border 300ms ease-out;
+
+	  &:hover,
+	  &:focus {
+	    background: transparent;
+	    padding-bottom: 16px;
+	    border-bottom: 3px solid $secondario;
+	  }
+	  &:hover:after{
+
+	  }
+
+	}
+	> .active > a {
+	  &,
+	  &:hover,
+	  &:focus {
+	    color: $navbar-default-link-active-color;
+	    background: transparent;
+	    padding-bottom: 16px;
+	    border-bottom: 3px solid $primario;
+	  }
+	}
+	> .disabled > a {
+	  &,
+	  &:hover,
+	  &:focus {
+	    color: $navbar-default-link-disabled-color;
+	    background-color: $navbar-default-link-disabled-bg;
+	  }
+	}
+}
+
+.navbar-default .navbar-nav {
+	> .active > a {
+		&,
+		&:hover,
+		&:focus {
+			background: transparent;
+		}
+	}
+}
+
 
 
 
@@ -139,7 +197,7 @@
 }
 
 #utilityBar.colored {
-	background: $primario;
+	background: $grigio-perla;
 	transition: 600ms ease-Out;
 }
 
@@ -160,5 +218,11 @@
 #utilityBar.colored .shape-logo-furcht {
 	fill: $terziario;
 }
+
+
+
+
+
+
 
 

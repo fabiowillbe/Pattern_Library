@@ -10,6 +10,9 @@
   > li {
   	border: 1px solid $secondario;
     // Active state
+    a {
+      margin-bottom: 0;
+    }
     &.active > a {
       &,
       &:hover,

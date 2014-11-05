@@ -112,6 +112,13 @@ $border-radius-small:       0px !default;
 
 
 // ********************************
+// Navbar collapse - VEDI FILE _VARIABLES.SCSS DI BOOTSTRAP
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     1125px !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: (1125px - 1) !default;
+
+// ********************************
 //  NAVBAR
 // ********************************
 

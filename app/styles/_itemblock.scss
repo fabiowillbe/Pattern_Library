@@ -32,6 +32,22 @@
 	&.no-border {
 		border: none;
 	}
+	// Hover Effect Animation with Mixin
+	.itemimageBox {
+		overflow: hidden;
+	}
+	.itemimage {
+			@include imageHoverAnimation (1, 600ms, ease-out);
+		&:hover {
+			@include imageHoverAnimation (1.3, 600ms, ease-out);
+		}
+	}
+	.itemtitle {
+		@include textChangeColor (600ms, ease-out);
+	}
+	&:hover .itemtitle {
+		color: $primario;
+	}
 }
 
 a.itemblock:hover,
@@ -45,7 +61,7 @@ a.itemblock:focus {
 //  itemBlock Prodotto
 // ********************************
 .productblock {
-	
+	 
 }
 
 // ********************************
