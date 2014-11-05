@@ -27,6 +27,27 @@
 }
 
 
+// *******************************************************************
+//  Cross browser rgba background
+// *******************************************************************
+@mixin rgba-background($color, $opacity) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  $rgba: rgba($red, $green, $blue, $opacity);
+  $ie-color: ie-hex-str($rgba);
+  background-color: rgb($red, $green, $blue);
+  background-color: transparent\9;
+  background-color: $rgba;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$ie-color}', endColorstr='#{$ie-color}');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$ie-color}', endColorstr='#{$ie-color}')";
+  zoom: 1;
+  &:nth-child(n) {
+  filter: none;
+  }
+}
+
+
 // Transparent Color
 @mixin transparent($color, $alpha) {
   $rgba: rgba($color, $alpha);

@@ -233,12 +233,6 @@ $(document).ready(function() {
 	/**********************/
 	/*  ISOTOPE PRODUCT   */
 	var $container = $('.items');
-
-	/*$container.imagesLoaded(function () {
-		$container.isotope({
-			itemSelector: '.item'
-		});
-	});*/
 	
 	var resizeTimer;
 	
@@ -264,12 +258,20 @@ $(document).ready(function() {
 		return false;
 		
 	});
-	/***********************/
 	/* END ISOTOPE PRODUCT */
+	/***********************/
 
+	/**********************/
+	/*  SearchOverlay   */
+	$('a.itemSearchBtn').click(function () {
+		/*$('a.itemSearchOverlayBox').fadeIn( 3000, function() {
 
-
-
+		});*/
+		/*({
+		  duration: 400,
+		  easing: 'easeInExpo', 
+		});*/
+	});
 
 	
 });

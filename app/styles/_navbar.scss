@@ -36,6 +36,12 @@
 	font-size: $font-size-navbar;
 }
 
+@media (min-width: $screen-lg) {
+	.navbar-nav > li > a {
+		font-size: $font-size-small!important;
+	}
+}
+
 .navbar-nav {
 	>li {
 		padding-left: 15px;
@@ -109,7 +115,7 @@
 	top: 0;
 	left: 0;
 	//transition: background-color 0.5s ease;
-	
+
 	a.logo {
 		color: $terziario;
 		&:hover,
@@ -123,6 +129,34 @@
 	}
 	
 	
+	a.itemSearchBtn {
+		display: block;
+		margin-right: 10px;
+		color: $terziario;
+		width: 25px;
+		height: 25px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 21px;
+		&:hover,
+		&:focus {
+			color: $primario;
+		}
+	}
+
+	.itemSearchOverlayBox {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		height: 100%;
+		@include rgba-background($terziario, 0.8);
+	}
+
+
+
 	.navbar-form.search {
 		margin: 0px 15px;
 		padding: 0;
@@ -207,6 +241,13 @@
 			&:focus {
 				color: $terziario;
 			}
+		}
+	}
+	a.itemSearchBtn {
+		color: $secondario;
+		&:hover,
+		&:focus {
+			color: $primario;
 		}
 	}
 }
