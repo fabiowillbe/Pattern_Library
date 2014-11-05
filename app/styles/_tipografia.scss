@@ -12,17 +12,22 @@ b, strong {
 // -------------------------
 
 h1, .h1 { 
+  font-family: $font-titoli-primaria;
   font-size: $font-size-h1; 
   color: $primario;
 }
 
 h2, .h2 { 
+  font-family: $font-titoli-primaria;
   font-size: $font-size-h2;
+  font-weight: 200;
   color: $secondario;
 }
 
 h3, .h3 { 
+  font-family: $font-titoli-secondaria;
   font-size: $font-size-h3;
+  font-weight: 300;
   color: $testo;
 }
 

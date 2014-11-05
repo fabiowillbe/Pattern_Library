@@ -1,5 +1,7 @@
 'use strict';
 
+window.typekitLoad( 'uns6pkh' );
+
 $(document).ready(function() {
 
 

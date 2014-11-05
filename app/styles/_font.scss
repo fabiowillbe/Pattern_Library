@@ -67,6 +67,15 @@ $lato: 'Lato';
 */
 // ********************************
 
+// ********************************
+// Trajan Pro
+// ********************************
+/*
+$trajan:	'trajan-pro-3';
+*/
+// ********************************
+
+
 // ************************************************************************************************
 // Tipografia
 // ************************************************************************************************
@@ -80,7 +89,7 @@ $font-primaria: 		$source-sans-pro, Helvetica, Arial, sans-serif;
 $font-secondaria:		$source-sans-pro, Helvetica, Arial, sans-serif;
 
 // Font dedicata ai titoli (h1..h6)
-$font-titoli-primaria:	$source-sans-pro, Helvetica, Arial, sans-serif;
+$font-titoli-primaria:	trajan-pro-3, serif;
 $font-titoli-secondaria:$source-sans-pro, Helvetica, Arial, sans-serif;	
 
 // Dimensione font base
@@ -119,6 +128,6 @@ $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-carousel-one:  floor(($font-size-h1 * 1.2));
+$font-size-carousel-one:  floor(($font-size-h1 * 1.5));
 $font-size-carousel-two:  floor(($font-size-h3 * 1));
 //**********************************
