@@ -19,4 +19,11 @@
   }
 }
 
-
+.container-wrapper {
+	padding-left: $gutter-warapper;
+	padding-right: $gutter-warapper;
+	.row-no-gutter {
+		margin-left: -$gutter-warapper;
+		margin-right: -$gutter-warapper;
+	}
+}

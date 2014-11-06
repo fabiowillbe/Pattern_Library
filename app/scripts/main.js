@@ -27,7 +27,7 @@ $(document).ready(function() {
 	});
 	$('#brandBar').on('affixed.bs.affix', function(){
 		$('#utilityBar').addClass('colored');
-		$('#intro').css('padding-top', $('#utilityBar').outerHeight());
+		$('#main').css('padding-top', $('#utilityBar').outerHeight());
 	});
 	
 	
