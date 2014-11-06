@@ -2,8 +2,8 @@
 
 window.typekitLoad( 'uns6pkh' );
 
-$(document).ready(function() {
 
+$(document).ready(function() {
 
 	$('.stiyleGuideLink a').tooltip();
 
@@ -263,15 +263,14 @@ $(document).ready(function() {
 
 	/**********************/
 	/*  SearchOverlay   */
-	$('a.itemSearchBtn').click(function () {
-		/*$('a.itemSearchOverlayBox').fadeIn( 3000, function() {
-
-		});*/
-		/*({
-		  duration: 400,
-		  easing: 'easeInExpo', 
-		});*/
+	$('a.itemSearchBtn').click(function (e) {
+		e.preventDefault();
+		$('.itemSearchOverlayBox').fadeIn(300, 'easeInCubic');
 	});
 
+	$('a.itemSearchOverlayCloseBtn').click(function (e) {
+		e.preventDefault();
+		$('.itemSearchOverlayBox').fadeOut(300, 'easeInCubic');
+	});
 	
 });

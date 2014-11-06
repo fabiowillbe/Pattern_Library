@@ -114,7 +114,7 @@
 	z-index: 10;
 	top: 0;
 	left: 0;
-	//transition: background-color 0.5s ease;
+	transition: 600ms ease-Out;
 
 	a.logo {
 		color: $terziario;
@@ -127,35 +127,6 @@
 			max-height: 25px;
 		}
 	}
-	
-	
-	a.itemSearchBtn {
-		display: block;
-		margin-right: 10px;
-		color: $terziario;
-		width: 25px;
-		height: 25px;
-		line-height: 30px;
-		text-align: center;
-		font-size: 21px;
-		&:hover,
-		&:focus {
-			color: $primario;
-		}
-	}
-
-	.itemSearchOverlayBox {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 100;
-		width: 100%;
-		height: 100%;
-		@include rgba-background($terziario, 0.8);
-	}
-
-
 
 	.navbar-form.search {
 		margin: 0px 15px;
@@ -224,10 +195,46 @@
 			margin-right: 0;
 		}
 	}
+	a.itemSearchBtn {
+		display: block;
+		margin-right: 10px;
+		color: $terziario;
+		width: 25px;
+		height: 25px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 21px;
+		&:hover,
+		&:focus {
+			color: $primario;
+		}
+	}
 }
 
-#utilityBar {
-	transition: 600ms ease-Out;
+.itemSearchOverlayBox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	@include rgba-background($terziario, 0.8);
+	padding-top: 100px;
+
+	a.itemSearchOverlayCloseBtn {
+		color: $secondario;
+		padding-right: 15px;
+		&:hover,
+		&:focus {
+			color: $primario;
+		}
+	}
+
+	.itemSearch {
+		margin-top: $vertical-space;
+		background: #f3f3f3;
+	}
 }
 
 #utilityBar.colored {
