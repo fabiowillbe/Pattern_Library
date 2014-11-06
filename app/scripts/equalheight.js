@@ -56,8 +56,8 @@ $.fn.eqHeights = function(options) {
 // can't have the same pattern for some reason or it scans the page and makes all the same height. Each row should be separate but it doesn't work that way.
 $(window).load(function() {
 
-//$('[class*="eq-"]').eqHeights();
+  $('[class*="eq-"]').eqHeights();
   //$('.videoContent [class*="eq-"]').eqHeights({parentSelector:'.videoContent'});
-/*$('.foo2 [class*="eq-"]').eqHeights();*/
+  //$('.foo2 [class*="eq-"]').eqHeights();
 
 }); 

@@ -202,53 +202,43 @@
     </div><!-- end navbar -->
     </div>
     
+
+    <div id="vimeo-container"></div>
+	<div id="vimeo-controls">
+	  <span id="close-vimeo"><i class="fa fa-times"></i></span>
+	</div>
+
+
+
     <section id="main" class="container-fluid">
-	    
-		<div id="threebox" class="row row-terziario row-vert-padd">
-			<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
-    			<div class="row">
-    				<div class="col-xs-12 col-sm-8 col-md-8">
-						<div class="trbox-container no-border no-background">
-							<h3>Video in evidenza</h3>
-							<div class="embed-responsive embed-responsive-16by9">
-					          <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/VobEPIGIomk" allowfullscreen></iframe>
-					        </div>
-						</div>
-					</div><!-- End boxOne -->
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<div class="trbox-container no-border no-background">
-							<h3>Ultime news</h3>
-							<div class="row">
-								<div class="col-xs-6 col-sm-12">
-									<div class="itemblock newsblock no-border">
-										<h4 class="itemTitle"><a href="">Ricordo di Sergio Fiorentino</a></h4>
-										<div class="itemDate">1 Feb 2001</div>
-										<div class="itemText">Anche se molti non se ne rendevano conto (o facevano finta di non rendersene conto) Sergio Fiorentino, uscito di scena...</div>
-										<div class="itemAuthor">di Riccardo Risaliti</div>
-									</div>
-								</div>
-								<div class="col-xs-6 col-sm-12">
-									<div class="itemblock newsblock no-border">
-										<h4 class="itemTitle"><a href="">Ricordo di Sergio Fiorentino</a></h4>
-										<div class="itemDate">1 Feb 2001</div>
-										<div class="itemText">Anche se molti non se ne rendevano conto (o facevano finta di non rendersene conto) Sergio Fiorentino, uscito di scena...</div>
-										<div class="itemAuthor">di Riccardo Risaliti</div>
-									</div>
-								</div>
-								<div class="col-xs-6 col-sm-12">
-									<div class="itemblock newsblock no-border">
-										<h4 class="itemTitle"><a href="">Ricordo di Sergio Fiorentino</a></h4>
-										<div class="itemDate">1 Feb 2001</div>
-										<div class="itemText">Anche se molti non se ne rendevano conto (o facevano finta di non rendersene conto) Sergio Fiorentino, uscito di scena...</div>
-										<div class="itemAuthor">di Riccardo Risaliti</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- End boxThree -->
-    			</div>
-			</div>
-		</div><!-- End ThreeBox -->
+	    <!-- videoNewsContent -->
+	    <div class="row videoNewsContent row-terziario row-vert-padd row-no-gutter">
+	      <!-- VideoItem -->
+	      <div id="video-left-container" class="eq-col-xs-12 eq-col-sm-12 eq-col-md-6 col-xs-12 col-sm-12 col-md-6">
+	        <div class="cont">
+	            <div class="featured-content">
+	              <h1 class="video-title">Shigeru Kawai Concert Series</h1>
+	              <hr>
+	              <a id="play-button" href="">
+	                 <i class="fa fa-play-circle"></i> GUARDA IL VIDEO
+	              </a>
+	            </div>
+	            <div id="video-container" style="">
+	              <video id="lexi-video" width="640" height="360" volume="0" muted="muted" loop="" autoplay="" preload="auto" >
+	                <source type="video/webm" src="/video/kawai10secs.webm"></source>
+	                <source id="mobile-mp4" type="video/mp4" src="/video/kawai10secs.mp4"></source>
+	              </video>
+	            </div>
+	        </div> 
+	      </div>
+	      <!-- ContentItem -->
+	      <div class="video-right-container eq-col-xs-12 eq-col-sm-12 eq-col-md-6 col-xs-12 col-sm-12 col-md-6">
+	        <div class="cont">
+	          <h1>Kawai, 85 anni di eccellenza e qualità</h1>
+	          <p class="lead">Dal 1927, Kawai è uno dei migliori costruttori a livello mondiale di pianoforti, per l'eccellente <strong>qualità</strong> e <strong>lavorazione</strong>. Ogni elemento del pianoforte è costruito con abilità e passione solo dopo aver scelto i migliori materiali. Il risultato è un livello di lavoro eccelso, per una produzione rigorosamente selezionata e uno strumento in grado di miscelare l’armonia di un suono classico con tecniche di costruzione sempre più moderne. Solo in questo modo i pianoforti acustici e digitali Kawai sono <strong>la scelta ideale</strong> dei pianisti, insegnanti, studenti e appassionati di pianoforte in tutto il mondo. Questo spirito innovativo è l'essenza di Kawai, ed è la ragione principale per cui rimaniamo una generazione avanti nel fornire <strong>prestazioni eccezionali e durature nel tempo</strong>.</p>
+	        </div>  
+	      </div> 
+	    </div><!-- /. VideoContent row -->
 
 		<div class="row">
 			<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
@@ -288,7 +278,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 						  	  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/RX-5.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">RX Series</span>
@@ -299,7 +289,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/GX-7.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">GX Series</span>
@@ -310,7 +300,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/CL36B_front.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">CL Series</span>
@@ -318,21 +308,21 @@
 							  </div>
 							</a><!-- Fine itemBlock -->
 						</li>
-						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item anytime verticali">
+						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/MP-Series_MP11_styling+music_rest.jpg">
 							  </div>
 							  <div class="itemtext">
-							  	  <span class="iteminfo">ATX</span>
-								  <span class="itemtitle">K-2 ATX</span>
+							  	  <span class="iteminfo">Stage Piano</span>
+								  <span class="itemtitle">MP 11</span>
 							  </div>
 							</a><!-- Fine itemBlock -->
 						</li>
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/GM10.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">GE-GM Series</span>
@@ -343,7 +333,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item verticali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/K-600_EP_styling.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">K Series</span>
@@ -354,7 +344,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item anytime coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/RX2ATX.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">ATX</span>
@@ -365,7 +355,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/CS10_styling.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">Classic Series</span>
@@ -376,7 +366,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item anytime coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/GE30_ATX.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">ATX</span>
@@ -387,7 +377,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item verticali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/K5.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">K Series</span>
@@ -398,7 +388,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/CN34M.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">CN Series</span>
@@ -409,7 +399,7 @@
 						<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
 						  	<a href="prodotto.html" class="itemblock productblock">
 							  <div class="itemimageBox">
-							  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
+							  	  <img class="img-responsive itemimage" src="images/prodotti/EX-Series_EX-Concert-Grand.jpg">
 							  </div>
 							  <div class="itemtext">
 							  	  <span class="iteminfo">EX Series</span>
@@ -643,5 +633,8 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="/scripts/main.js"></script>
         <!-- endbuild -->
+
+        <script src="/scripts/video.js"></script>
+
 </body>
 </html>
