@@ -1,7 +1,7 @@
 
 a#stiyleGuideLink {
 	display: inline-block;
-	color: $terziario;
+	color: $offwhite-color;
 	background: $primario;
 	position: fixed;
 	top: 110px;
@@ -155,7 +155,7 @@ body {
 
 .terziario {
   @extend .paletta-colore;
-  background: $terziario;
+  background: $offwhite-color;
 }
 
 .testo {

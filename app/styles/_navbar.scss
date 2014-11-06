@@ -104,7 +104,7 @@
 // ********************************
 
 #utilityBar {
-	color: $terziario;
+	color: $offwhite-color;
 	background: transparent;
 	width: 100%;
 	height: 40px;
@@ -117,7 +117,7 @@
 	transition: 600ms ease-Out;
 
 	a.logo {
-		color: $terziario;
+		color: $offwhite-color;
 		&:hover,
 		&:focus {
 			color: $secondario;
@@ -142,10 +142,10 @@
 			background: transparent;
 			color: $primario;
 			transition: 300ms ease-Out;
-			@include input-placeholder($terziario);
+			@include input-placeholder($offwhite-color);
 			&:focus {
-				background: $terziario;
-				border-color: $terziario;
+				background: $offwhite-color;
+				border-color: $offwhite-color;
 				box-shadow: none;
 				@include input-placeholder($primario);
 				transition: 300ms ease-Out;
@@ -154,7 +154,7 @@
 		.input-group-btn .btn {
 			background: $secondario;
 			height: 25px;
-			color: $terziario;
+			color: $offwhite-color;
 		}
 	}
 			
@@ -168,7 +168,7 @@
 		li a {
 			display: block;
 			margin-right: 5px;
-			color: $terziario;
+			color: $offwhite-color;
 			width: 25px;
 			height: 25px;
 			line-height: 25px;
@@ -198,7 +198,7 @@
 	a.itemSearchBtn {
 		display: block;
 		margin-right: 10px;
-		color: $terziario;
+		color: $offwhite-color;
 		width: 25px;
 		height: 25px;
 		line-height: 30px;
@@ -219,7 +219,7 @@
 	z-index: 100;
 	width: 100%;
 	height: 100%;
-	@include rgba-background($terziario, 0.8);
+	@include rgba-background($offwhite-color, 0.8);
 	padding-top: 100px;
 
 	a.itemSearchOverlayCloseBtn {
@@ -246,7 +246,7 @@
 			color: $secondario;
 			&:hover,
 			&:focus {
-				color: $terziario;
+				color: $offwhite-color;
 			}
 		}
 	}
@@ -270,7 +270,7 @@
   display: inline-block;
   width: 84px;
   height:25px;
-  fill: $terziario;
+  fill: $offwhite-color;
 }
 
 #utilityBar.colored .shape-logo-furcht {

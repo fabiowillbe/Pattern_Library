@@ -4,9 +4,9 @@
 
 footer.page-footer {
 	background: $secondario;
-	color: $terziario;
+	color: $offwhite-color;
 	a {
-		color: $terziario;
+		color: $offwhite-color;
 		&:hover,
 		&focus {
 			text-decoration: none;
@@ -21,8 +21,8 @@ footer.page-footer {
 		  min-height: 250px;
 		}
 		.footer-centro {
-		  border-left: 1px solid $terziario;
-		  border-right: 1px solid $terziario;
+		  border-left: 1px solid $offwhite-color;
+		  border-right: 1px solid $offwhite-color;
 		}
 		.foot-cont {
 		    display: table;
