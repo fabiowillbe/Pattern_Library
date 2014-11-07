@@ -19,6 +19,10 @@ fieldset {
 //  Btn
 // ********************************
 
+.btn:active, .btn.active {
+    box-shadow: none;
+}
+
 // Alternate buttons
 // --------------------------------------------------
 
@@ -45,11 +49,15 @@ fieldset {
   @include button-variant-kawai($btn-danger-color, $btn-danger-bg);
 }
 
-// KAwai buttons
+// Kawai buttons
 // --------------------------------------------------
 .btn-kawai-default {
   @include button-variant-kawai($btn-primary-color, $primario);
 }
 .btn-kawai-primary {
   @include button-variant-kawai($btn-primary-color, $secondario);
+}
+
+.btn-kawai-secondary {
+  @include button-variant-kawai($btn-primary-color, $terziario);
 }

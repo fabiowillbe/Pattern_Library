@@ -152,7 +152,8 @@ $(document).ready(function() {
 		singleItem: true,
 		addClassActive: true,
         transitionStyle: 'fade',
-        navigationText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        //navigationText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        navigationText: ['<i class="icon-left-open"></i>', '<i class="icon-right-open"></i>'],
 			
     	afterInit: function() {
         	fadeIn();
@@ -262,7 +263,7 @@ $(document).ready(function() {
 	/***********************/
 
 	/**********************/
-	/*  SearchOverlay   */
+	/*  SearchOverlay     */
 	$('a.itemSearchBtn').click(function (e) {
 		e.preventDefault();
 		$('.itemSearchOverlayBox').fadeIn(300, 'easeInCubic');
@@ -275,16 +276,10 @@ $(document).ready(function() {
 	
 	
 	
-	
+	/**********************/
+	/*  MixItUp Product   */
 	$('#mixItUpProduct').mixItUp();
 	
-	$(function(){
-
-	// Instantiate MixItUp:
-
-		
-
-	});
 	
 	
 	

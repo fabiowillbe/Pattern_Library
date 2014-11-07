@@ -58,8 +58,8 @@
 	  &:hover,
 	  &:focus {
 	    background: transparent;
-	    padding-bottom: 16px;
-	    border-bottom: 3px solid $secondario;
+	    padding-top: 16px;
+	    border-top: 3px solid $terziario;
 	  }
 	  &:hover:after{
 
@@ -72,8 +72,8 @@
 	  &:focus {
 	    color: $navbar-default-link-active-color;
 	    background: transparent;
-	    padding-bottom: 16px;
-	    border-bottom: 3px solid $primario;
+	    padding-top: 16px;
+	    border-top: 3px solid $primario;
 	  }
 	}
 	> .disabled > a {
@@ -129,7 +129,7 @@
 	}
 
 	.navbar-form.search {
-		margin: 0px 15px;
+		margin: 8px 15px 8px;
 		padding: 0;
 		.btn {
 			font-size: 12px;
@@ -162,7 +162,7 @@
 	a.itemSearchBtn {
 		display: block;
 		margin-right: 10px;
-		color: $offwhite-color;
+		color: $terziario;
 		width: 25px;
 		height: 25px;
 		line-height: 30px;
@@ -186,7 +186,7 @@
 	}
 	li a {
 		display: block;
-		color: $offwhite-color;
+		color: $terziario;
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
@@ -196,6 +196,7 @@
 	li a:hover,
 	li a:focus {
 		background: $terziario;
+		color: $offwhite-color;
 	}
 	/* Social colored icon */
 	li.yt a:hover {
@@ -250,7 +251,7 @@
 	transition: 600ms ease-Out;
 	.social-list {
 		li a {
-			color: $secondario;
+			color: $terziario;
 			&:hover,
 			&:focus {
 				color: $offwhite-color;
@@ -258,10 +259,10 @@
 		}
 	}
 	a.itemSearchBtn {
-		color: $secondario;
+		color: $terziario;
 		&:hover,
 		&:focus {
-			color: $primario;
+			color: $offwhite-color;
 		}
 	}
 }
@@ -271,6 +272,10 @@
 	width: 125px; /* 180px */
 	height: 25px; /* 36px */
 	fill: $primario;
+}
+
+.kawai-footer .shape-logo-kawai {
+	margin:0 auto;
 }
 
 .shape-logo-furcht {
