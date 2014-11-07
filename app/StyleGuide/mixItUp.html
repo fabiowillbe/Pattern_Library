@@ -57,7 +57,7 @@
 
   <div class="container">
       <div class="jumbotron">
-        <h1>Isotope</h1>
+        <h1>MixItUp</h1>
       </div>
   </div>
 
@@ -66,18 +66,18 @@
       
 
       <div class="col-xs-12">
-        <div id="isotopeProduct" class="row row-no-gutter">
+        <div id="mixItUpProduct" class="row row-no-gutter">
 
           <ul class="isotope-filter text-center row-vert-padd">
-			<li><a class="btn btn-kawai-primary active" data-filter="*" href="#">All</a></li>
-			<li><a class="btn btn-kawai-primary" data-filter=".coda" href="#">Pianoforti a Coda</a></li>
-			<li><a class="btn btn-kawai-primary" data-filter=".verticali" href="#">Pianoforti Verticali</a></li>
-			<li><a class="btn btn-kawai-primary" data-filter=".anytime" href="#">Pianoforti Anytime</a></li>
-			<li><a class="btn btn-kawai-primary" data-filter=".digitali" href="#">Pianoforti Digitali</a></li>
+			<li><a class="btn btn-kawai-primary filter active" data-filter="all" href="#">All</a></li>
+			<li><a class="btn btn-kawai-primary filter" data-filter=".coda" href="#">Pianoforti a Coda</a></li>
+			<li><a class="btn btn-kawai-primary filter" data-filter=".verticali" href="#">Pianoforti Verticali</a></li>
+			<li><a class="btn btn-kawai-primary filter" data-filter=".anytime" href="#">Pianoforti Anytime</a></li>
+			<li><a class="btn btn-kawai-primary filter" data-filter=".digitali" href="#">Pianoforti Digitali</a></li>
 		  </ul>
 
-          <ul class="items">
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
+          <ul class="">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="coda">
 			  	<a href="prodotto.html" class="itemblock productblock">
 			  	  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/RX-5.jpg">
@@ -88,7 +88,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="coda">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/GX-7.jpg">
@@ -99,7 +99,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="digitali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/CL36B_front.jpg">
@@ -110,7 +110,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="digitali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/MP11.jpg">
@@ -121,7 +121,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="coda">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/GM10.jpg">
@@ -132,7 +132,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item verticali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="verticali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/K-600_EP_styling.jpg">
@@ -143,7 +143,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item anytime coda">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="anytime">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/RX2ATX.jpg">
@@ -154,7 +154,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="digitali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/CS10_styling.jpg">
@@ -165,7 +165,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item anytime coda">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="anytime">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/GE30_ATX.jpg">
@@ -176,7 +176,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item verticali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="verticali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/K5.jpg">
@@ -187,7 +187,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item digitali">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="digitali">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/CN34M.jpg">
@@ -198,7 +198,7 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 item coda">
+			<li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix" data-filter="coda">
 			  	<a href="prodotto.html" class="itemblock productblock">
 				  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/EX-Series_EX-Concert-Grand.jpg">
@@ -279,6 +279,9 @@
     <!-- endbower -->
     <!-- endbuild -->
 	 <script src="/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+	 
+	 
+	 <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="/scripts/main.js"></script>

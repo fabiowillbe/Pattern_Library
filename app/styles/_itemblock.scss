@@ -152,7 +152,7 @@ a.itemblock:focus {
 	 }
 	 &:hover .itemimage {
 		@include imageHoverAnimation (1.3, 600ms, ease-out);
-	}
+	 }
 
 }
 
@@ -210,7 +210,41 @@ a.serieblock:focus {
 //  itemBlock Artista
 // ********************************
 .artistblock {
-	
+	border: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-bottom: 0;
+	.itemtext {
+		background: none;
+	 	text-align: center;
+	 	position: absolute;
+	 	top: 39%;
+	 	left: 0;
+	 	width: 100%;
+	 	z-index: 4;
+	 	font-family: $font-titoli-primaria;
+	}
+	&:hover:after {
+	 	display: block;
+	 	content: " ";
+	 	position: absolute;
+	 	top: 0;
+	 	left: 0;
+	 	width: 100%;
+	 	height: 100%;
+	 	background: $primario;
+	 	z-index: 3;
+	 	@include rgba-background($terziario, 0.8);
+	 	transition: 600ms ease-out;
+	 }
+	  .itemtitle {
+		 display: inline-block;
+		 border: 1px solid $terziario;
+	 }
+	 &:hover .itemimage {
+		@include imageHoverAnimation (1.3, 600ms, ease-out);
+	 }
 }
 
 // ********************************

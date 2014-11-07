@@ -75,6 +75,34 @@
 	padding-bottom: $vertical-space-mini;
 }
 
+.row-vert-marg {
+	margin-top: $vertical-space;
+	margin-bottom: $vertical-space;
+}
+
+.row-vert-marg-mini {
+	margin-top: $vertical-space-mini;
+	margin-bottom: $vertical-space-mini;
+}
+
+.row-top-marg {
+	margin-top: $vertical-space;
+}
+
+.row-top-marg-mini {
+	margin-top: $vertical-space-mini;
+}
+
+.row-bot-marg {
+	margin-bottom: $vertical-space;
+}
+
+.row-bot-marg-mini {
+	margin-bottom: $vertical-space-mini;
+}
+
+
+
 .row-title {
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;

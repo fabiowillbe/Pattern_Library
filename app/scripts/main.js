@@ -273,4 +273,19 @@ $(document).ready(function() {
 		$('.itemSearchOverlayBox').fadeOut(300, 'easeInCubic');
 	});
 	
+	
+	
+	
+	$('#mixItUpProduct').mixItUp();
+	
+	$(function(){
+
+	// Instantiate MixItUp:
+
+		
+
+	});
+	
+	
+	
 });
