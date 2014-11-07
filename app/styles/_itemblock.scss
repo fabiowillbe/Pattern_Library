@@ -379,7 +379,28 @@ ul.isotope-filter {
     	&:focus {
     		color: $primario;
     		text-decoration: none;
+    		
     	}
+    }
+    .video-subtitle {
+	    color: $terziario;
+	    font-size: $font-size-large;
+    }
+    
+    a#play-button .play {
+    	display: inline-block;
+	    width: 40px;
+	    height: 40px;
+	    border-radius: 40px;
+	    border: 1px solid $terziario;
+	    font-size: 20px;
+	    line-height: 40px;
+	    text-align: center;
+	    margin-right: 15px;
+	    background: rgba( $secondario, .4 );
+    }
+    a#play-button:hover .play {
+	    border-color: $primario;
     }
 }
 

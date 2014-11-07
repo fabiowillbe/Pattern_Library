@@ -4,6 +4,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 // Variables & mixing
 @import "_font";
+@import "_fontello";
 @import "_variabili";
 @import "_mixin";
 // Fine Variables & mixing
@@ -25,6 +26,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import "_navs";
 @import "_form-btn";
 @import "_carousel";
+@import "_itemsort";
 // Fine importa stili
 
 // Pattern Library Scaffolding

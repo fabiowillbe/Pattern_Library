@@ -45,3 +45,16 @@ h6, .h6 {
   font-size: $font-size-h6;
   color: $secondario;
 }
+
+.vert-spacer {
+	border-left: 5px solid $terziario;
+	//margin: 0 0 20px;
+	padding: 0 0 0 20px;
+}
+
+img.img-full-responsive {
+	display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}

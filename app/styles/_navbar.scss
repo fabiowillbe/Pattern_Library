@@ -108,8 +108,8 @@
 	background: transparent;
 	width: 100%;
 	height: 40px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	//padding-top: 8px;
+	//padding-bottom: 8px;
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -158,43 +158,7 @@
 		}
 	}
 			
-	.social-list {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li {
-			display: inline-block;
-		}
-		li a {
-			display: block;
-			margin-right: 5px;
-			color: $offwhite-color;
-			width: 25px;
-			height: 25px;
-			line-height: 25px;
-			text-align: center;
-			font-size: 14px;
-			border-radius: 25px;
-		}
-		li.yt a:hover {
-			background:	#cc181e;
-		}
-		li.fb a:hover {
-			background:	#4668B3;
-		}
-		li.gp a:hover {
-			background:	#DE5745;
-		}
-		li.tw a:hover {
-			background:	#2FBBED;
-		}
-		li.sc a:hover {
-			background:	#ff3e00;
-		}
-		li:last-child a {
-			margin-right: 0;
-		}
-	}
+	
 	a.itemSearchBtn {
 		display: block;
 		margin-right: 10px;
@@ -204,10 +168,53 @@
 		line-height: 30px;
 		text-align: center;
 		font-size: 21px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		&:hover,
 		&:focus {
 			color: $primario;
 		}
+	}
+}
+
+.social-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+	}
+	li a {
+		display: block;
+		color: $offwhite-color;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		font-size: 14px;
+	}
+	li a:hover,
+	li a:focus {
+		background: $terziario;
+	}
+	/* Social colored icon */
+	li.yt a:hover {
+		background:	#cc181e;
+	}
+	li.fb a:hover {
+		background:	#4668B3;
+	}
+	li.gp a:hover {
+		background:	#DE5745;
+	}
+	li.tw a:hover {
+		background:	#2FBBED;
+	}
+	li.sc a:hover {
+		background:	#ff3e00;
+	}
+	li:last-child a {
+		margin-right: 0;
 	}
 }
 
@@ -268,6 +275,7 @@
 
 .shape-logo-furcht {
   display: inline-block;
+  margin-top: 8px;
   width: 84px;
   height:25px;
   fill: $offwhite-color;
