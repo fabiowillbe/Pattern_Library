@@ -7,11 +7,11 @@
 // ********************************
 
 .row-primario {
-	background: $colorebellowallpaper;
+	background: $gray-lighter-color;
 }
 
 .row-secondario {
-	background: $colorebellowallpaperdue;
+	background: $gray-dark-color;
 	color: $offwhite-color;
 	h2 {
 		color: $offwhite-color;
@@ -30,7 +30,7 @@
 }
 
 .row-quattro {
-	background: $colorebellowallpapertre;
+	background: $primario;
 	color: $offwhite-color;
 	h2,
 	h5 {
@@ -39,7 +39,7 @@
 }
 
 .row-cinque {
-	background: $colorebellowallpaperquat;
+	background: $secondario;
 	color: $offwhite-color;
 	h2 {
 		color: $offwhite-color;

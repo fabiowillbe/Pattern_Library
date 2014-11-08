@@ -1,42 +1,60 @@
 // ********************************
-// WillBe PAttern Library
+// WillBe PAattern Library
 // Variabili
 // ********************************
 
 // ********************************
-// Colori
+// Colori da ELIMINARE TBD
 // ********************************
 
 // SET #1
-$verde-smeraldo:	#315e51;
-$verde-vintage:		#65B18A;
-$bianco:			#FFFFFF;
-$grigio-antracite:	#9e9e9e;
-$grigio-perla:		#f2f2f2;
-$fumo:				#E4E8E3;
+//$verde-smeraldo:	#315e51;
+//$verde-vintage:		#65B18A;
+//$bianco:			#FFFFFF;
+//$grigio-antracite:	#9e9e9e;
+//$grigio-perla:		#f2f2f2;
+//$fumo:				#E4E8E3;
 
 // SET #2
-$legno-scuro:		#46433A;
-$turchese:			#009999;
-$bianco:			#FFFFFF;
-$grigio-antracite:	#9e9e9e;
-$grigio-perla:		#f2f2f2;
-$beige:				#DED4B9;
+//$legno-scuro:		#46433A;
+//$turchese:			#009999;
+//$bianco:			#FFFFFF;
+//$grigio-antracite:	#9e9e9e;
+//$grigio-perla:		#f2f2f2;
+//$beige:				#DED4B9;
 
 // SET #3
-$viola-metamorfosi:	#774B55;
-$oro:				#DDB176;
-$bianco:			#FFFFFF;
-$grigio-antracite:	#9e9e9e;
-$grigio-perla:		#f2f2f2;
-$sabbia:			#EAE2D6;
+//$viola-metamorfosi:	#774B55;
+//$oro:				#DDB176;
+//$bianco:			#FFFFFF;
+//$grigio-antracite:	#9e9e9e;
+//$grigio-perla:		#f2f2f2;
+//$sabbia:			#EAE2D6;
 
 
-// NEUTRAL SET
+//$gray-darker:            lighten(#000, 13.5%) !default; // #222
+//$gray-dark:              lighten(#000, 20%) !default;   // #333
+//$gray:                   lighten(#000, 33.5%) !default; // #555
+//$gray-light:             lighten(#000, 46.7%) !default; // #777
+//$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
+//$brand-primary:         #428bca !default;
+//$brand-success:         #5cb85c !default;
+//$brand-info:            #5bc0de !default;
+//$brand-warning:         #f0ad4e !default;
+//$brand-danger:          #d9534f !default;
+
+//$colorebellowallpaper:		$grigio-perla;
+//$colorebellowallpaperdue:	$grigio-antracite;
+//$colorebellowallpapertre:	$red-kawai;
+//$colorebellowallpaperquat:	$black-kawai;
+
+// ********************************
+// Colori neutri
+// ********************************
 $white:				#FFFFFF;
-$offwhite-color: 	lighten(#000, 97); //F7F7F7
-$gray-lighter-color: lighten(#000, 93); //EDEDED
+$offwhite-color: 	lighten(#000, 98); //FAFAFA
+$gray-lighter-color: lighten(#000, 95); //F2F2F2
 $gray-light-color: lighten(#000, 88); //e0e0e0
 $gray-color: lighten(#000, 80);//cccccc
 $gray-dark-color: lighten(#000, 60); //999999
@@ -44,73 +62,30 @@ $gray-darker-color: lighten(#000, 40); //666666
 $black-soft-color: lighten(#000, 30); //4d4d4d
 $black-full-color: lighten(#000, 23.5); //3C3C3C
 
+// ********************************
 // SET KAWAI Literal -> espresso in lettere
+// ********************************
+
 $red-kawai:			#EA221B;
 $black-kawai:		#3C3C3C;
 $gold:				#C6B799;
 $gold-light:		lighten(saturate(#C6B799, 14), 11);
 
-
-
-
-// SET KAWAI "per fabio" Usiamo sempre le variabili espresse in lettere direttamente nelle variabili colore semantiche
-// $kawai-prim:		$red-kawai;
-// $kawai-sec:		$black-kawai;
-
-
 // ********************************
-// Colori semantici
+// Colori di marca
 // ********************************
 $primario:			$red-kawai;
 $secondario:		$black-kawai;
 $terziario:			$gold;
-$testo:				$black-soft-color;
-$fondo:				$offwhite-color;
-$altro:				$fumo;
-
-$colorebellowallpaper:		$grigio-perla;
-$colorebellowallpaperdue:	$grigio-antracite;
-$colorebellowallpapertre:	$red-kawai;
-$colorebellowallpaperquat:	$black-kawai;
 
 // ********************************
-// Scaffolding
+// Principali applicazioni
 // ********************************
-$body-bg:               $fondo !default;
-$text-color:            $testo !default;
+//$testo:				$black-soft-color; //
+$body-bg:			$offwhite-color !default;
+$text-color:            $black-soft-color !default;
 $link-color:            $secondario !default;
 $link-hover-color:      darken($secondario, 15%) !default;
-
-// ********************************
-// Colori base Bootstrap 3
-// ********************************
-//## Gray and brand colors for use across Bootstrap.
-
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              lighten(#000, 20%) !default;   // #333
-$gray:                   lighten(#000, 33.5%) !default; // #555
-$gray-light:             lighten(#000, 46.7%) !default; // #777
-$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
-
-$brand-primary:         #428bca !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
-// ********************************
-// Fine Colori base Bootstrap 3
-// ********************************
-
-// ********************************
-//== Scaffolding
-// ********************************
-//## Settings for some of the most global styles.
-
-//** Background color for `<body>`.
-$body-bg:               $fondo !default;
-//** Global text color on `<body>`.
-$text-color:            $testo !default;
-
 //** Global textual link color.
 $link-color:            $secondario !default;
 //** Link hover color set via `darken()` function.

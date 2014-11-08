@@ -3,11 +3,11 @@
 // ********************************
 
 footer.page-footer {
-	background: $grigio-perla;
-	color: $testo;
+	background: $gray-lighter-color;
+	color: $text-color;
 	font-weight: 300;
 	a {
-		color: $testo;
+		color: $text-color;
 		&:hover,
 		&focus {
 			text-decoration: none;
@@ -15,7 +15,7 @@ footer.page-footer {
 		} 
 	}
 	h4 {
-		color: $testo;
+		color: $text-color;
 	}
 	#primary-footer {
 		ul {

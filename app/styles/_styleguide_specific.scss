@@ -100,14 +100,14 @@ body.stlgd {
 // ********************************
 // Principali applicazioni
 // ********************************
-.fondo primario {
+.fondo_primario {
   @extend .paletta-colore;
-  background: $fondo;
+  background: $body-bg;
 }
 
-.fondo secondario {
+.fondo_secondario {
   @extend .paletta-colore;
-  background: $fondo;
+  background: $gray-lighter-color;
 }
 
 

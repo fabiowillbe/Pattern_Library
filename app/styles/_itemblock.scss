@@ -305,7 +305,7 @@ a.itemblock:focus {
 		margin-top: 0px;
 	}
 	h5 {
-		color: $testo;
+		color: $text-color;
 	}
 }
 
@@ -317,8 +317,8 @@ a.itemblock:focus {
 .trbox-container {
 	margin-bottom: 0;
 	transition:all 0.2s ease-in-out;
-	background: $fondo;
-	border: 1px solid $testo;
+	background: $body-bg;
+	border: 1px solid $text-color; //bordo con colore testo. si può fare meglio?
 	display:block;
 	padding: 4px;
 	.caption {
