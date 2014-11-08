@@ -2,13 +2,15 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Pattern_Library</title>
+    <title>Kawai Style Guide</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,12 +21,12 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body class="stlgd">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar navbar-default navbar-static-top stlgd" role="navigation">
     <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
@@ -33,7 +35,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button><!-- end navbar-toggle -->
-      <a class="navbar-brand" href="#">PL</a>
+      <a class="navbar-brand" href="#">Kawai Style Guide</a>
     </div><!-- end navbar-header -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -48,18 +50,16 @@
 
 
 
+    <!-- Content -->
 
 
     <div class="container">
-
-      <div class="jumbotron">
-        <h1>Tipografia</h1>
-      </div>
-
-      <h1 class="titolo-pl">Colori</h1>
+       <!-- Colori -->
+      <h1 class="stlgd">Colori</h1>
+      <h2 class="stlgd">Colori di marca</h2>
       <div class="row">
           <div class="col-xs-2">
-            <div class="paletta">
+            <div class="paletta stlgd bordered">
               <div class="paletta-colore primario">
 
               </div>
@@ -67,58 +67,156 @@
             </div>
           </div>
           <div class="col-xs-2">
-            <div class="paletta">
+            <div class="paletta stlgd bordered">
               <div class="paletta-colore secondario">
               </div>
               <strong>Secondario</strong>
             </div>
           </div>
           <div class="col-xs-2">
-            <div class="paletta">
+            <div class="paletta stlgd bordered">
               <div class="paletta-colore terziario">
 
               </div>
               <strong>Terziario</strong>
             </div>
           </div>
+      </div>      
+      <!-- Colori neutri-->
+      <h2 class="stlgd">Colori neutri</h2>
+      <div class="row">
           <div class="col-xs-2">
-            <div class="paletta">
-              <div class="paletta-colore testo">
-
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-lighter">
               </div>
-              <strong>Testo</strong>
+              <strong>gray-lighter</strong>
             </div>
           </div>
           <div class="col-xs-2">
-            <div class="paletta">
-              <div class="paletta-colore fondo">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-light">
 
               </div>
-              <strong>Fondo</strong>
+              <strong>gray-light</strong>
             </div>
           </div>
           <div class="col-xs-2">
-            <div class="paletta">
-              <div class="paletta-colore altro">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray">
 
               </div>
-              <strong>Altro</strong>
+              <strong>gray</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-dark">
+              </div>
+              <strong>gray-dark</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+           <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-darker">
+
+              </div>
+              <strong>gray-darker</strong>
+            </div>
+          </div>
+       </div>   
+       <div class="row">
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore white">
+
+              </div>
+              <strong>white</strong>
+            </div>
+          </div>
+
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore off-white">
+
+              </div>
+              <strong>offwhite</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore black-full">
+
+              </div>
+              <strong>black-full</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore black-soft">
+
+              </div>
+              <strong>black-soft</strong>
             </div>
           </div>
       </div>
+      <h2 class="stlgd">Principali applicazioni</h2>
+      <div class="row">
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore fondo">
+              </div>
+              <strong>fondo</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore testo">
 
-      <h1 class="patliblem titolo">Heading</h1>
-      <h1>Heading livello 1</h1>
-      <h2>Heading livello 2</h2>
-      <h3>Heading livello 3</h3>
-      <h4>Heading livello 4</h4>
-      <h5>Heading livello 5</h5>
-      <h6>Heading livello 6</h6>
+              </div>
+              <strong>testo</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore titoli1">
 
-      <h1 class="patliblem titolo">Paragrafo - Quotation - Elementi inline</h1>
+              </div>
+              <strong>titoli</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-dark">
+              </div>
+              <strong>bordi</strong>
+            </div>
+          </div>
+          <div class="col-xs-2">
+           <div class="paletta stlgd bordered">
+              <div class="paletta-colore gray-darker">
 
+              </div>
+              <strong>gray-darker</strong>
+            </div>
+          </div>
+       </div>   
+      <!-- end Colori -->
+
+      <h1 class="stlgd">Tipografia</h1>
+
+      <!-- Heading -->
+      <h2 class="stlgd">Heading</h2>
+          <h1>Heading livello 1</h1>
+          <h2>Heading livello 2</h2>
+          <h3>Heading livello 3</h3>
+          <h4>Heading livello 4</h4>
+          <h5>Heading livello 5</h5>
+          <h6>Heading livello 6</h6>
+      <h2 class="stlgd">Paragrafo - Quotation - Elementi inline</h2>
       <div class="patliblem box">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+      <h2 class="stlgd">Paragrafo - Quotation - Elementi inline</h2>
       </div>
       <div class="patliblem box">
         <blockquote>
@@ -258,21 +356,42 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-
-    <script src="/bower_components/bigtext/src/bigtext.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <script src="../bower_components/bigtext/dist/bigtext.js"></script>
+    <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <script src="../bower_components/get-style-property/get-style-property.js"></script>
+    <script src="../bower_components/get-size/get-size.js"></script>
+    <script src="../bower_components/matches-selector/matches-selector.js"></script>
+    <script src="../bower_components/eventie/eventie.js"></script>
+    <script src="../bower_components/doc-ready/doc-ready.js"></script>
+    <script src="../bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="../bower_components/jquery-bridget/jquery.bridget.js"></script>
+    <script src="../bower_components/outlayer/item.js"></script>
+    <script src="../bower_components/outlayer/outlayer.js"></script>
+    <script src="../bower_components/masonry/masonry.js"></script>
+    <script src="../bower_components/isotope/js/item.js"></script>
+    <script src="../bower_components/isotope/js/layout-mode.js"></script>
+    <script src="../bower_components/isotope/js/isotope.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/vertical.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/fit-rows.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/masonry.js"></script>
+    <script src="../bower_components/async-load/load.js"></script>
+    <script src="../bower_components/dom-class/class.js"></script>
+    <script src="../bower_components/typekit-load/load.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

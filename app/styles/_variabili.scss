@@ -41,8 +41,8 @@ $gray-light-color: lighten(#000, 88); //e0e0e0
 $gray-color: lighten(#000, 80);//cccccc
 $gray-dark-color: lighten(#000, 60); //999999
 $gray-darker-color: lighten(#000, 40); //666666
-$black-soft: lighten(#000, 30); //4d4d4d
-$black-full: lighten(#000, 23.5); //3C3C3C
+$black-soft-color: lighten(#000, 30); //4d4d4d
+$black-full-color: lighten(#000, 23.5); //3C3C3C
 
 // SET KAWAI Literal -> espresso in lettere
 $red-kawai:			#EA221B;
@@ -64,7 +64,7 @@ $gold-light:		lighten(saturate(#C6B799, 14), 11);
 $primario:			$red-kawai;
 $secondario:		$black-kawai;
 $terziario:			$gold;
-$testo:				$black-soft;
+$testo:				$black-soft-color;
 $fondo:				$offwhite-color;
 $altro:				$fumo;
 

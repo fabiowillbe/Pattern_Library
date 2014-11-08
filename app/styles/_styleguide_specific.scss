@@ -1,3 +1,107 @@
+// ********************************
+// WillBe Style Guide Pages
+// Specific Style
+// ********************************
+
+$styleguide-color: $gray-color;
+
+body.stlgd {
+	background-color: $white
+}
+
+.stlgd {
+	font-family: Helvetica, sans-serif;
+	color: $styleguide-color;
+	border-color: $styleguide-color;
+}
+	h2.stlgd {
+	  border-bottom: 1px solid $styleguide-color;
+	}
+
+.bordered {
+	border: 1px solid;
+}
+// -------------------------
+// Palett Colori
+// -------------------------
+
+.paletta { 
+  width: 96%;
+  padding: 4%;
+  margin-bottom: 20px;
+}
+
+.paletta-colore {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 8px;
+}
+
+.primario {
+  @extend .paletta-colore;
+  background: $primario;
+}
+
+.secondario {
+  @extend .paletta-colore;
+  background: $secondario;
+}
+
+.terziario {
+  @extend .paletta-colore;
+  background: $gold;
+}
+
+.white {
+  @extend .paletta-colore;
+  background: $white;
+}
+
+.off-white {
+  @extend .paletta-colore;
+  background: $offwhite-color;
+}
+
+.gray-lighter {
+  @extend .paletta-colore;
+  background: $gray-lighter-color;
+}
+
+.gray-light {
+  @extend .paletta-colore;
+  background: $gray-light-color;
+}
+
+.gray {
+  @extend .paletta-colore;
+  background: $gray-color;
+}
+
+.gray-dark {
+  @extend .paletta-colore;
+  background: $gray-dark-color;
+}
+
+.gray-darker {
+  @extend .paletta-colore;
+  background: $gray-darker-color;
+}
+
+.black-full {
+  @extend .paletta-colore;
+  background: $black-full-color;
+}
+
+.black-soft {
+  @extend .paletta-colore;
+  background: $black-full-color;
+}
+
+.fondo {
+  @extend .paletta-colore;
+  background: $fondo;
+}
+
 
 a#stiyleGuideLink {
 	display: inline-block;
@@ -12,11 +116,8 @@ a#stiyleGuideLink {
 
 
 h1.patliblem.titolo {
-  color: #000;
-  font-size: 23px;
   margin: 25px 0px 10px;
-  padding: 0px 0px 10px;
-  border-bottom: 1px solid #000;
+  padding: 0px 0px 40px;
 }
 
 div.patliblem.box {
@@ -124,70 +225,5 @@ body {
     border-bottom: 0;
   }
 }
-
-
-// -------------------------
-// Palett Colori
-// -------------------------
-
-.paletta {
-  width: 96%;
-  padding: 4%;
-  border: 1px solid #000000;
-  font-size: 11px;
-}
-
-.paletta-colore {
-  width: 100%;
-  height: 60px;
-  margin-bottom: 8px;
-}
-
-.primario {
-  @extend .paletta-colore;
-  background: $primario;
-}
-
-.secondario {
-  @extend .paletta-colore;
-  background: $secondario;
-}
-
-.terziario {
-  @extend .paletta-colore;
-  background: $offwhite-color;
-}
-
-.testo {
-  @extend .paletta-colore;
-  background: $testo;
-}
-
-.fondo {
-  @extend .paletta-colore;
-  background: $fondo;
-}
-
-.altro {
-  @extend .paletta-colore;
-  background: $altro;
-}
-
-// -------------------------
-// Esempi Font
-// -------------------------
-
-.marriweather {
-  font-family: $marriweather;
-} 
-.montserrat {
-  font-family: $montserrat;
-} 
-.campton-light {
-  font-family: $campton-light;
-} 
-.campton-bold {
-  font-family: $campton-bold;
-} 
 
 
