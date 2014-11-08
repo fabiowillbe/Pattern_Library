@@ -97,7 +97,15 @@ body.stlgd {
   background: $black-full-color;
 }
 
-.fondo {
+// ********************************
+// Principali applicazioni
+// ********************************
+.fondo primario {
+  @extend .paletta-colore;
+  background: $fondo;
+}
+
+.fondo secondario {
   @extend .paletta-colore;
   background: $fondo;
 }

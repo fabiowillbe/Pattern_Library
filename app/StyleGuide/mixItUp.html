@@ -9,8 +9,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/qunit/qunit/qunit.css" />
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,15 +19,6 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
-
-	<style>
-	
-		#mixItUpProduct .mix{
-			display: none;
-		}
-
-	</style>
 
   </head>
   <body>
@@ -78,15 +69,14 @@
         <div id="mixItUpProduct" class="row row-no-gutter">
 
           <ul class="isotope-filter text-center row-vert-padd">
-			<li><a class="btn btn-kawai-primary filter active" data-filter="all" href="#">All</a></li>
-			<li><a class="btn btn-kawai-primary filter" data-filter=".coda" href="#">Pianoforti a Coda</a></li>
-			<li><a class="btn btn-kawai-primary filter" data-filter=".verticali" href="#">Pianoforti Verticali</a></li>
-			<li><a class="btn btn-kawai-primary filter" data-filter=".anytime" href="#">Pianoforti Anytime</a></li>
-			<li><a class="btn btn-kawai-primary filter" data-filter=".digitali" href="#">Pianoforti Digitali</a></li>
+			<li><div class="btn btn-kawai-primary filter active" data-filter="all">All</div></li>
+			<li><div class="btn btn-kawai-primary filter" data-filter=".coda" >Pianoforti a Coda</div></li>
+			<li><div class="btn btn-kawai-primary filter" data-filter=".verticali">Pianoforti Verticali</div></li>
+			<li><div class="btn btn-kawai-primary filter" data-filter=".anytime">Pianoforti Anytime</div></li>
+			<li><div class="btn btn-kawai-primary filter" data-filter=".digitali">Pianoforti Digitali</div></li>
 		  </ul>
 
-          <!--<ul class="">-->
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix coda" data-filter="coda">
+		  	<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mix coda" data-filter="coda">
 			  	<a href="prodotto.html" class="itemblock productblock">
 			  	  <div class="itemimageBox">
 				  	  <img class="img-responsive itemimage" src="/images/prodotti/RX-5.jpg">
@@ -218,7 +208,6 @@
 				  </div>
 				</a><!-- Fine itemBlock -->
 			</div>
-		<!-- </ul> -->
 
         </div>
       </div>
@@ -249,42 +238,43 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/qunit/qunit/qunit.js"></script>
-    <script src="/bower_components/bigtext/dist/bigtext.js"></script>
-    <script src="/bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="/bower_components/get-style-property/get-style-property.js"></script>
-    <script src="/bower_components/get-size/get-size.js"></script>
-    <script src="/bower_components/matches-selector/matches-selector.js"></script>
-    <script src="/bower_components/eventie/eventie.js"></script>
-    <script src="/bower_components/doc-ready/doc-ready.js"></script>
-    <script src="/bower_components/eventEmitter/EventEmitter.js"></script>
-    <script src="/bower_components/jquery-bridget/jquery.bridget.js"></script>
-    <script src="/bower_components/outlayer/item.js"></script>
-    <script src="/bower_components/outlayer/outlayer.js"></script>
-    <script src="/bower_components/masonry/masonry.js"></script>
-    <script src="/bower_components/isotope/js/item.js"></script>
-    <script src="/bower_components/isotope/js/layout-mode.js"></script>
-    <script src="/bower_components/isotope/js/isotope.js"></script>
-    <script src="/bower_components/isotope/js/layout-modes/vertical.js"></script>
-    <script src="/bower_components/isotope/js/layout-modes/fit-rows.js"></script>
-    <script src="/bower_components/isotope/js/layout-modes/masonry.js"></script>
-    <script src="/bower_components/async-load/load.js"></script>
-    <script src="/bower_components/dom-class/class.js"></script>
-    <script src="/bower_components/typekit-load/load.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <script src="../bower_components/bigtext/dist/bigtext.js"></script>
+    <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <script src="../bower_components/get-style-property/get-style-property.js"></script>
+    <script src="../bower_components/get-size/get-size.js"></script>
+    <script src="../bower_components/matches-selector/matches-selector.js"></script>
+    <script src="../bower_components/eventie/eventie.js"></script>
+    <script src="../bower_components/doc-ready/doc-ready.js"></script>
+    <script src="../bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="../bower_components/jquery-bridget/jquery.bridget.js"></script>
+    <script src="../bower_components/outlayer/item.js"></script>
+    <script src="../bower_components/outlayer/outlayer.js"></script>
+    <script src="../bower_components/masonry/masonry.js"></script>
+    <script src="../bower_components/isotope/js/item.js"></script>
+    <script src="../bower_components/isotope/js/layout-mode.js"></script>
+    <script src="../bower_components/isotope/js/isotope.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/vertical.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/fit-rows.js"></script>
+    <script src="../bower_components/isotope/js/layout-modes/masonry.js"></script>
+    <script src="../bower_components/async-load/load.js"></script>
+    <script src="../bower_components/dom-class/class.js"></script>
+    <script src="../bower_components/typekit-load/load.js"></script>
+    <script src="../bower_components/mixitup2/src/jquery.mixitup.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 	 <script src="/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>

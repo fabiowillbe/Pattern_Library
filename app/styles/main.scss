@@ -1,9 +1,11 @@
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $fa-font-path: "../bower_components/font-awesome/fonts";
 
 
 // Variables & mixing
 @import "_font";
+@import "_fontello";
 @import "_variabili";
 @import "_mixin";
 // Fine Variables & mixing
@@ -25,12 +27,10 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import "_navs";
 @import "_form-btn";
 @import "_carousel";
+@import "_itemsort";
 @import "_styleguide_specific";
-
 // Fine importa stili
 
 // Pattern Library Scaffolding
 //@import "_pl-scaffolding";
 // Pattern Library Scaffolding
-
-

@@ -80,11 +80,6 @@ $body-bg:               $fondo !default;
 $text-color:            $testo !default;
 $link-color:            $secondario !default;
 $link-hover-color:      darken($secondario, 15%) !default;
-// Spaziature verticali
-$vertical-space: 50px;
-$vertical-space-mini: 25px;
-// Gutter per spaziatura container-wrapper
-$gutter-warapper:	30px;
 
 // ********************************
 // Colori base Bootstrap 3
@@ -197,3 +192,14 @@ $navbar-inverse-toggle-border-color:        $terziario !default;
 // ********************************
 //  END NAVBAR
 // ********************************
+
+
+// ********************************
+//  VERTICAL SPACER
+// ********************************
+// Spaziature verticali
+$vertical-space-full:	$navbar-height;
+$vertical-space: ceil(($navbar-height * 0.66666)) !default; // ~40px
+$vertical-space-mini: ceil(($navbar-height * 0.33333)) !default; // ~20px
+// Gutter per spaziatura container-wrapper
+$gutter-warapper:	30px;

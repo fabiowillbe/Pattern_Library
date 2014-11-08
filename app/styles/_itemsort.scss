@@ -1,0 +1,41 @@
+// ********************************
+// WillBe Pattern Library
+// Item Sort
+// ********************************
+
+// ********************************
+//  Isotope
+// ********************************
+
+ul.items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.isotope-filter {
+	list-style: none;
+	li {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+		//background: $secondario;
+		//color: $offwhite-color;
+		//padding: 4px 10px;
+		&.active,
+		&:hover {
+			//background: $primario;
+			//text-decoration: none;
+		} 
+	}
+}
+
+
+// ********************************
+//  MixItUp
+// ********************************
+
+#mixItUpProduct .mix{
+	display: none;
+}

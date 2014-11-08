@@ -3,15 +3,19 @@
 // ********************************
 
 footer.page-footer {
-	background: $secondario;
-	color: $offwhite-color;
+	background: $grigio-perla;
+	color: $testo;
+	font-weight: 300;
 	a {
-		color: $offwhite-color;
+		color: $testo;
 		&:hover,
 		&focus {
 			text-decoration: none;
-			color: $primario;
+			color: $terziario;
 		} 
+	}
+	h4 {
+		color: $testo;
 	}
 	#primary-footer {
 		ul {
@@ -21,8 +25,8 @@ footer.page-footer {
 		  min-height: 250px;
 		}
 		.footer-centro {
-		  border-left: 1px solid $offwhite-color;
-		  border-right: 1px solid $offwhite-color;
+		  border-left: 3px solid $terziario;
+		  border-right: 3px solid $terziario;
 		}
 		.foot-cont {
 		    display: table;
@@ -33,25 +37,9 @@ footer.page-footer {
 	}
 	#secondary-footer {
 		font-size: $font-size-small;
-		li.yt a:hover,
-		li.yt a:focus {
-			color:	#cc181e;
-		}
-		li.fb a:hover,
-		li.fb a:focus {
-			color:	#4668B3;
-		}
-		li.gp a:hover,
-		li.gp a:focus {
-			color:	#DE5745;
-		}
-		li.tw a:hover,
-		li.tw a:focus {
-			color:	#2FBBED;
-		}
-		li.sc a:hover,
-		li.sc a:focus {
-			color:	#ff3e00;
+		li a:hover,
+		li a:focus {
+			color:	$offwhite-color;
 		}
 	}
 	a.navbar-brand {
