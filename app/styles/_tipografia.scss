@@ -1,5 +1,5 @@
 // ********************************
-// WillBe PAttern Library
+// WillBe Pattern Library
 // Tipografia
 // ********************************
 
@@ -12,9 +12,11 @@ a:focus {
   text-decoration: none;
 }
 
-
-// Headings
-// -------------------------
+// ********************************
+// Headings 
+// TBD dobbiamo introdurre gli EM
+// TBD x Fabio Possiamo migliorare con @extends?
+// ********************************
 
 h1, .h1 { 
   font-family: $font-titoli-primaria;
@@ -33,7 +35,7 @@ h3, .h3 {
   font-family: $font-titoli-secondaria;
   font-size: $font-size-h3;
   font-weight: 300;
-  color: $text-color;
+  color: $terziario;
 }
 
 h4, .h4 { 
@@ -51,13 +53,30 @@ h6, .h6 {
   color: $secondario;
 }
 
-blockquote {
-    border-left: 3px solid $terziario;
+// ********************************
+// Paragrafo
+// ********************************
+
+p {
+  font-family: $font-primaria;
+  font-weight: 300;
+  color: $secondario;
 }
 
+// ********************************
+// Citazione
+// ********************************
+blockquote {
+  font-family: $font-secondaria;
+  font-size: $font-size-base;
+  border-left: 3px solid $terziario;
+}
 blockquote.primary {
-    font-family: $headings-font-family;
-    font-size: $font-size-large;
+  font-size: $font-size-large;
+}
+
+strong {
+  font-weight: 400;
 }
 
 

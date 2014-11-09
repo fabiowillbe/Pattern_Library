@@ -2,28 +2,27 @@
 // No Gutter Grid System
 // ********************************
 
-
 .row-no-gutter {
-  [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+    [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 .row-no-gutter-Boxspacer {
-  padding-left: 15px;
-  padding-right: 15px;
-  [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+    padding-left: 15px;
+    padding-right: 15px;
+    [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 .container-wrapper {
-	padding-left: $gutter-warapper;
-	padding-right: $gutter-warapper;
-	.row-no-gutter {
-		margin-left: -$gutter-warapper;
-		margin-right: -$gutter-warapper;
-	}
+    padding-left: $gutter-warapper;
+    padding-right: $gutter-warapper;
+    .row-no-gutter {
+        margin-left: -$gutter-warapper;
+        margin-right: -$gutter-warapper;
+    }
 }
