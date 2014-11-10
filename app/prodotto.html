@@ -18,6 +18,7 @@
     
     <link rel="stylesheet" href="/bower_components/owlcarousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="/bower_components/owlcarousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="/bower_components/owlcarousel/owl-carousel/owl.transitions.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -68,7 +69,29 @@
 		c0.1-0.2,0.4-0.4,0.6-0.4h9.6c0.2,0,0.5,0.1,0.6,0.4l2.3,5.4c0.4,1.1-0.7,2.3-2.3,2.3h-0.1c-0.2,0-0.4,0.2-0.4,0.4v0.5
 		c0,0.2,0.2,0.4,0.4,0.4h13.5c0.2,0,0.4-0.1,0.4-0.4v-0.5C134.9,28.7,134.6,28.5,134.4,28.5"/> </g> </symbol></svg>
     
-    
+
+    <div class="itemSearchOverlayBox">
+		<a class="itemSearchOverlayCloseBtn pull-right" href="#"><i class="fa fa-times fa-3x"></i></a>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+					<form class="navbar-form search itemSearch" role="search">
+						<div class="input-group">
+							<input class="form-control" type="text" name="q" placeholder="Search">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- /.itemSearchOverlayBox -->
+
     <div id="utilityBar">
     	<div class="container-fluid">
     		<div class="pull-left">
@@ -81,26 +104,23 @@
 	    		</ul>
 	    	</div>
 	    	<div class="pull-right">
-	    		<a class="logo" href="#">
+	    		<a class="" href="#">
 	    			<svg class="shape-logo-furcht">
   						<use xlink:href="#shape-furcht"></use>
 					</svg>
-	    		</a>
+				</a>
 	    	</div>
 	    	<div class="pull-right">
 	    		
 	    	</div>
 	    	<div class="pull-right">
-	    		<form class="navbar-form search" role="search">
-					<div class="input-group">
-						<input class="form-control" type="text" name="q" placeholder="Search">
-						<div class="input-group-btn">
-							<button class="btn btn-default" type="submit">
-								<i class="glyphicon glyphicon-search"></i>
-							</button>
-						</div>
-					</div>
-				</form>
+
+	    		<a class="itemSearchBtn" href="#">
+	    			<i class="glyphicon glyphicon-search"></i>
+	    		</a>
+
+	    		
+				
 	    	</div>
     	</div>
     </div>
@@ -108,9 +128,14 @@
     
     <div id="hero" class="medium-hero">
     	<div class="static-hero" style="background-image: url(../images/slider/slider3.jpg);">
-    		<div class="hero-caption hero-ceter">
-	    		<h1>Il pianoforte da palco professionale che non accetta compromessi</h1>
-    		</div>
+    		<div class="container">
+				<div class="caption vertical-center text-left">
+					<div class="capt-conteinar">
+						<h2>Il pianoforte da palco professionale che non accetta compromessi</h2>
+					</div>
+				</div>
+			</div>
+    		
     	</div>
     </div>
 
@@ -134,9 +159,9 @@
 					<li class=""><a href="index.html">Home</a></li>
 					<!--<li class=""><a href="prodotto.html">Prodotto</a></li>-->
 					<li class=""><a href="pianoforti_coda.html">Pianoforti a Coda</a></li>
-					<li class=""><a href="#">Pianoforti Verticali</a></li>
-					<li class=""><a href="#">Pianoforti Digitali</a></li>
-					<li class=""><a href="#">Pianoforti Anytime</a></li>
+					<li class=""><a href="pianoforti_verticali.html">Pianoforti Verticali</a></li>
+					<li class=""><a href="pianoforti_digitali.html">Pianoforti Digitali</a></li>
+					<li class=""><a href="pianoforti_anytime.html">Pianoforti Anytime</a></li>
 					<li class=""><a href="#">Supporto</a></li>
 					<li class=""><a href="#">Artist page</a></li>
 					<li class=""><a href="#">News ed eventi</a></li>
@@ -149,53 +174,62 @@
     <section id="main" class="container-fluid">
     	<!-- Nome prodotto e abstract -->
     	<div class="row">
+    		<div class="col-sm-9 col-md-9 col-lg-6 col-lg-offset-2 row-top-padd-micro">
+    			<div class="vert-spacer">
+	    			<ol class="breadcrumb">
+	    				<li><a href="index.html"><h3>Home</h3></a></li>
+	    				<li><a href="#"><h3>Stage Piano</h3></a></li>
+	    			</ol>
+    			</div>
+    		</div>
+    		<div class="col-sm-3 col-md-3 col-lg-2 row-top-padd-micro">
+    			<!-- SOCIAL SHARE -->
+	    		<!-- Button trigger modal -->
+				<ul class="social-list pull-right">
+	    			<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-facebook"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-twitter"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-google-plus"></i></a></li>
+    			</ul>
+	    		<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Social Share Example</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<p class="text-center">
+					      	<i class="fa fa-5x fa-facebook"></i>
+					      	<span style="margin:0px 30px;"><i class="fa fa-5x fa-twitter"></i></span>
+					      	<i class="fa fa-5x fa-google-plus"></i>
+				      	</p>
+				        <p class="lead text-center">Esempio di form per la condivisione sui social network</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary" data-dismiss="modal">Share</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- /. SOCIAL SHARE -->
+    		</div>
+
+
     		<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
-    			<h3>Stage Piano</h3>
     			<h2>MP 11</h2>
     		</div>
-    		
-    		<!-- SOCIAL SHARE -->
-    		<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 row-v-padding-bottom-mini">
-    			<!-- Button trigger modal -->
-				<a href="#" title="condividi su Facebook" style="margin-right: 15px;" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-facebook"></i></a>
-				<a href="#" title="condividi su Twitter" style="margin-right: 15px;" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-twitter"></i></a>
-				<a href="#" title="condividi su Google+" style="margin-right: 15px;" data-toggle="modal" data-target="#myModal"><i class="fa fa-lg fa-google-plus"></i></a>
-    		</div>
-    		
-    		<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			        <h4 class="modal-title" id="myModalLabel">Social Share Example</h4>
-			      </div>
-			      <div class="modal-body">
-			      	<p class="text-center">
-				      	<i class="fa fa-5x fa-facebook"></i>
-				      	<span style="margin:0px 30px;"><i class="fa fa-5x fa-twitter"></i></span>
-				      	<i class="fa fa-5x fa-google-plus"></i>
-			      	</p>
-			        <p class="lead text-center">Esempio di form per la condivisione sui social network</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary" data-dismiss="modal">Share</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- /. SOCIAL SHARE -->
-    		
-			<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 row-vert-padd">
+
+			<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 row-bot-padd">
 				<!-- TBD Inserire breadcrumbs -->
 				<p class="lead">La tastiera più <strong>autentica</strong>, il suono più realistico, e il controllo più <strong>articolato</strong>.</p>
 				<p class="lead">Kawai MP11 è un pianoforte da palco progettato per ottenere meccaniche e qualità di suono più realistiche possibili, mantenendo le operazioni dirette e intuitive di MP10 e dei precedenti modelli MP.
 Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran flessibilità, accessibilità e facilità d’uso anche senza consultare il manuale. In questo modo, anche i musicisti che non hanno mai suonato un MP possono sedersi e provare rapidamente la sensazione di suonare il miglior pianoforte da palco della serie.</p>
 
 
-				<blockquote>"Ho trovato alcuni pianoforti da palco molto difficili da capire, complicate interazioni suono/effetto e pulsanti con funzioni poco chiare. MP11 raggruppa i suoni in tre sezioni indipendenti, ed in tal modo il controllo è più intuitivo ed immediato."</blockquote>
-				<cite><small>Aotani-san</small></cite>
+				<blockquote class="row-bot-marg-micro">"Ho trovato alcuni pianoforti da palco molto difficili da capire, complicate interazioni suono/effetto e pulsanti con funzioni poco chiare. MP11 raggruppa i suoni in tre sezioni indipendenti, ed in tal modo il controllo è più intuitivo ed immediato."</blockquote>
+				<cite class="pull-right">- Aotani-san</cite>
 
 
 			</div>
@@ -211,11 +245,11 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 				  <div class="row row-v-padding">
 					  <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
 						  <!-- Tab navigation -->
-						  <ul id="productTab" class="nav nav-pills nav-justified">
-							  <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
-							  <li><a href="#specifiche" data-toggle="tab">Specifiche</a></li>
-							  <li><a href="#media" data-toggle="tab">Media</a></li>
-							  <li><a href="#supporto" data-toggle="tab">Supporto</a></li>
+						  <ul id="productTab" class="nav nav-justified">
+							  <li class="active"><a class="btn btn-kawai-secondary" href="#overview" data-toggle="tab">Overview</a></li>
+							  <li><a class="btn btn-kawai-secondary" href="#specifiche" data-toggle="tab">Specifiche</a></li>
+							  <li><a class="btn btn-kawai-secondary" href="#media" data-toggle="tab">Media</a></li>
+							  <li><a class="btn btn-kawai-secondary" href="#supporto" data-toggle="tab">Supporto</a></li>
 						  </ul><!-- /.Tab navigation -->
 						  
 					  </div>
@@ -228,79 +262,177 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 						<div id="overview" class="row tab-pane active">
 								
 							<div class="container-fluid">
-								<div class="row row-bot-padd">				
-								<!-- AREA IMMAGINI -->
-								<div class="col-sm-12 col-md-9 col-lg-6 col-lg-offset-2">
-									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-									  <!-- Wrapper for slides -->
-									  <div class="carousel-inner">
-									    <div class="item active">
-									      <img src="/images/slider/Slider1.jpg" alt="slide 1">
-									      <div class="carousel-caption">
-									        Lorem ipsum dolor sit amet
-									      </div>
-									      <div class="carousel-download">
-										      <a href="#" data-toggle="tooltip" data-placement="top" title="Scarica foto ad alta risoluzione">
-										      	<i class="fa fa-2x fa-download"></i>
-										      </a>
-									      </div>
-									    </div>
-									    <div class="item">
-									      <img src="/images/slider/Slider2.jpg" alt="slide 1">
-									      <div class="carousel-caption">
-									        Nullam quis risus eget urna mollis
-									      </div>
-									      <div class="carousel-download">
-										      <a href="#" data-toggle="tooltip" data-placement="top" title="Scarica foto ad alta risoluzione">
-										      	<i class="fa fa-2x fa-download"></i>
-										      </a>
-									      </div>
-									    </div>
-									    <div class="item">
-									      <img src="/images/slider/Slider3.jpg" alt="slide 1">
-									      <div class="carousel-caption">
-									        Donec id elit non mi porta gravida
-									      </div>
-									      <div class="carousel-download">
-										      <a href="#" data-toggle="tooltip" data-placement="top" title="Scarica foto ad alta risoluzione">
-										      	<i class="fa fa-2x fa-download"></i>
-										      </a>
-									      </div>
-									    </div>
-									  </div>
-									  <!-- Controls -->
-									  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-									    <span class="glyphicon glyphicon-chevron-left"></span>
-									  </a>
-									  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-									    <span class="glyphicon glyphicon-chevron-right"></span>
-									  </a>
+								<div class="row row-bot-padd">
+
+									<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+										
+
+										<div id="hero" class="">
+									    	<div id="owl-example" class="owl-carousel">
+									    		
+												<div class="item" style="background-image: url(/images/slider/slider1.jpg);">
+													<div class="cont">
+														<div class="caption vertical-center text-left">
+															
+															<div class="capt-conteinar fadeInLeft-1">
+																<h2 class="fadeIn-1 light-color">Allegro, adagio, grave, vivace</h2>
+																<h3 class="fadeIn-2 light-color">In un pianoforte Kawai ogni suono è un'emozione</h3>
+															</div>
+															
+														</div><!-- /.caption -->
+													</div><!-- /.container -->
+												</div><!-- /.item -->
+												
+												<div class="item" style="background-image: url(/images/slider/slider2.jpg);">
+													<div class="cont">
+														<div class="caption vertical-center text-left">
+															
+															<div class="capt-conteinar fadeInRight-1">
+																<h2 class="fadeInRight-1 light-color">La perfezione e il controllo tra le dita</h2>
+															</div>
+															
+														</div><!-- /.caption -->
+													</div><!-- /.container -->
+												</div><!-- /.item -->
+												
+												<div class="item" style="background-image: url(/images/slider/slider3.jpg);">
+													<div class="cont">
+														<div class="caption vertical-center text-left">
+															
+															<div class="capt-conteinar fadeIn-1">
+																<h2 class="fadeIn-1 light-color">The world’s most Advanced Pianos</h2>
+															</div>
+															
+														</div><!-- /.caption -->
+													</div><!-- /.container -->
+												</div><!-- /.item -->
+
+											</div>
+										</div>
+
 									</div>
-								</div>
-								<!-- FINE AREA IMMAGINI -->
-								<!-- AREA THUMBNAIL -->
-								<div class="col-sm-12 col-md-3 col-lg-2">
-									<!-- Indicators -->
-								    <ol class="carousel-indicators laterale">
-									    <li data-target="#carousel-example-generic" data-slide-to="0" class="">
-									    	<img src="" alt="..."> Lorem ipsum dolor sit amet
-									    </li>
-									    <li data-target="#carousel-example-generic" data-slide-to="1">
-									    	<img src="" alt="..."> Nullam quis risus eget urna mollis
-									    </li>
-									    <li data-target="#carousel-example-generic" data-slide-to="2">
-									    	<img src="" alt="..."> Donec id elit non mi porta gravida
-									    </li>
-								    </ol>
-								</div>
-								<!-- FINE AREA THUMBNAIL -->
 								
+								
+								</div>
 							</div>
-						</div>
 							
 								
 								<!-- Content Features -->
 								<div class="features-section">
+
+
+									<!-- Feature NEW -->
+								    <div class="container-fluid row-colwhite row-bot-padd-mini">
+								    	<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 itemblock featureblock">
+												<div class="row">
+													<div class="col-sm-12 col-md-4 row-title">
+														<h2 class="itemtitle">Sezione suoni</h2>
+													</div>	
+													<div class="col-sm-12 col-md-8">
+														<p>I suoni di MP11 sono organizzati in tre sezioni indipendenti: PIANO, E.PIANO e SUB. Ogni sezione di suono dispone di fader volume, controlli effetti e reverbero, e di quattro categorie di suono distinte, con variazioni di tono per ogni tipo.</p>
+														<p>Separare i suoni fondamentali permette di suonare e regolare liberamente ogni sezione, come se fosse uno strumento indipendente. Questo esclusivo approccio semplifica la creazione di sovrapposizioni, split e zone, evitando che gli effetti e altre impostazioni applicate ad una sezione possano incidentalmente influenzarne un’altra.</p>
+													</div>
+
+
+													<!-- tabs left -->
+													<!--
+												    <div class="tabbable tabs-left">
+												        <ul class="nav nav-tabs">
+												          <li><a href="#a" data-toggle="tab">One</a></li>
+												          <li class="active"><a href="#b" data-toggle="tab">Two</a></li>
+												          <li><a href="#c" data-toggle="tab">Twee</a></li>
+												        </ul>
+												        <div class="tab-content">
+												         <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
+												         Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+												         <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+												         Aliquam in felis sit amet augue.</div>
+												         <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+												         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+												        </div>
+												    </div>
+													-->
+													<div class="col-sm-12">
+														<div class="tabbable">
+
+														    <!-- /tabs -->
+														    <ul id="featTab" class="nav nav-justified row-top-padd">
+															  <li class="active"><a class="btn btn-kawai-primary" href="#feat-piano" data-toggle="tab">Piano</a></li>
+															  <li><a class="btn btn-kawai-primary" href="#feat-epiano" data-toggle="tab">E.Piano</a></li>
+															  <li><a class="btn btn-kawai-primary" href="#feat-sub" data-toggle="tab">Sub</a></li>
+														    </ul><!-- /.Tab navigation -->
+
+														    <!-- Tab content -->
+														    <div class="tab-content row-top-padd">
+														  		<!-- Tabbed pane 1: Piano -->
+																<div id="feat-piano" class="row tab-pane active">
+																	<div class="container-fluid">
+																		<div class="row">
+																			<div class="col-sm-12 col-md-6 row-title">
+																				<h3>Stupendi suoni di pianoforti acustici</h3>
+																				<img class="img-responsive row-bot-padd-micro" src="/images/features/MP11_section_PIANO.jpg">
+																				<p>La sezione PIANO dispone di una varietà di suoni di pianoforti da Concerto, Studio, Jazz, Moderno e Pop che sono adatti per una vasta gamma di stili e periodi musicali. E’ disponibile anche il suono di pianoforte verticale tradizione per quei brani che evocano un sentimento di nostalgia o semplicemente con carattere più intimo. E per suonare in un ambiente live, l’ulteriore suono di pianoforte mono assicurerà la distinzione di MP11 anche nei più pesanti mixaggi.</p>
+																			</div>
+																			<div class="col-sm-12 col-md-6">
+																				<div class="embed-responsive embed-responsive-16by9">
+          																			<iframe width="100%" height="650" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23149667%3Fsecret_token%3Ds-ylmN0&color=ff5500&auto_play=false&hide_related=false&show_artwork=false&show_playcount=false"/></iframe>
+        																		</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<!-- Tabbed pane 1: E.Piano -->
+																<div id="feat-epiano" class="row tab-pane">
+																	<div class="container-fluid">
+																		<div class="row">
+																			<div class="col-sm-12 col-md-6 row-title">
+																				<h3>Pianoforti elettrici Vintage</h3>
+																				<img class="img-responsive row-bot-padd-micro" src="/images/features/MP11_section_E.PIANO.jpg">
+																				<p>La sezione E.PIANO dispone di una gamma meravigliosa di autentici tine, reed e pianoforti elettrici moderni. Caldo, dolce, regolare, scuro, grintoso….qualunque sia lo stile o il suono, il pianoforte elettrico vintage di MP11 ispirerà le dita del pianista. Sono disponibili anche un paio di crunchy clavs per coprire le esigenze funk, mentre il coda elettrico – campionato dal Kawai EP308, con tutte le sue imperfezioni – fornisce un suono pop di grande effetto.</p>
+																			</div>
+																			<div class="col-sm-12 col-md-6">
+																				<div class="embed-responsive embed-responsive-16by9">
+																					<iframe width="100%" height="620" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23150852%3Fsecret_token%3Ds-VoOKJ&color=ff5500&auto_play=false&hide_related=false&show_artwork=false&show_playcount=false"/></iframe>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<!-- Tabbed pane 1: Sub -->
+																<div id="feat-sub" class="row tab-pane">
+																	<div class="container-fluid">
+																		<div class="row">
+																			<div class="col-sm-12 col-md-6 row-title">
+																				<h3>Suoni complementari</h3>
+																				<img class="img-responsive row-bot-padd-micro" src="/images/features/MP11_section_SUB.jpg">
+																				<p>A complemento dei suoni di pianoforti acustici e pianoforti elettrici vintage, la sezione SUB contiene ulteriori suoni “indispensabili” che aggiungono profondità alle esecuzioni. Strumenti ad arco di qualità e pads sono ideali per le sovrapposizioni, mentre i ricchi suoni bassi elettrici e acustici sono perfetti per le suddivisioni per mano sinistra. Per finire, una scelta di suoni di clavicembalo e mallet, completa la gamma timbrica, per quelle occasioni in cui si necessita di un suono particolare.</p>
+																			</div>
+																			<div class="col-sm-12 col-md-6">
+																				<div class="embed-responsive embed-responsive-16by9">
+																					<iframe width="100%" height="620" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23152729%3Fsecret_token%3Ds-Ved44&color=ff5500&auto_play=false&hide_related=false&show_artwork=false&show_playcount=false"/></iframe>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+															</div><!-- ./tab-content -->
+														</div><!-- ./tabbable -->
+													</div>
+
+
+												</div>
+
+											</div>
+										</div>
+								    </div><!-- Fine Feature NEW -->
+
+
+
 								
 									<!-- Feature 1 -->
 								    <div class="container-fluid row-terziario row-bot-padd-mini">
@@ -1130,24 +1262,8 @@ Il suo robusto telaio in alluminio e acciaio e la base rinforzata sono un ulteri
     <footer class="page-footer">
     	<section id="primary-footer">
 			<div class="container">
-				<div class="row row-vert-padd">
+				<div class="row row-top-padd">
 					<div class="col-xs-12 col-sm-4 col-md-4 footer-column">
-						<div class="foot-cont">
-							<h4>Kawai Worldwide</h4>
-							<ul>
-								<li><a href="#">Kawai Global</a></li>
-								<li><a href="#">Kawai Giappone</a></li>
-								<li><a href="#">Kawai Germania</a></li>
-								<li><a href="#">Kawai Usa</a></li>
-							</ul>
-							<a class="navbar-brand" href="#">
-								<svg class="shape-logo-kawai">
-			  						<use xlink:href="#shape-kawai"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 footer-column footer-centro">
 						<div class="foot-cont">
 							<h4>MONDO KAWAI</h4>
 							<ul>
@@ -1159,6 +1275,17 @@ Il suo robusto telaio in alluminio e acciaio e la base rinforzata sono un ulteri
 								<li><a href="#">Artist page</a></li>
 								<li><a href="#">Rivenditori certificati Kawai</a></li>
 								<li><a href="#">News ed eventi</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 footer-column footer-centro">
+						<div class="foot-cont">
+							<h4>Kawai Worldwide</h4>
+							<ul>
+								<li><a href="#">Kawai Global</a></li>
+								<li><a href="#">Kawai Giappone</a></li>
+								<li><a href="#">Kawai Germania</a></li>
+								<li><a href="#">Kawai Usa</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1175,9 +1302,16 @@ Il suo robusto telaio in alluminio e acciaio e la base rinforzata sono un ulteri
 				</div>
 			</div>
     	</section><!-- End Primary Footer -->
-		<section id="secondary-footer">
+		<section id="secondary-footer" class="row-bot-padd-mini">
 		<div class="container">
-				<div class="row">
+				<div class="row row-top-padd">
+					<div class="text-center col-md-12">
+						<a class="kawai-footer" href="#">
+							<svg class="shape-logo-kawai">
+		  						<use xlink:href="#shape-kawai"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="text-center col-md-12">
 						<ul class="social-list">
 			    			<li><a href="#"><i class="fa fa fa-youtube"></i></a></li>

@@ -45,6 +45,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).tab('show');
 	});
+	$('#featTab a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
 	/* FINE PRODUCT TAB   */
 	/**********************/
 	

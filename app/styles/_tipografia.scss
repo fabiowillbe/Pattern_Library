@@ -69,7 +69,10 @@ p {
 blockquote {
   font-family: $font-secondaria;
   font-size: $font-size-base;
+  line-height: $line-height-base;
   border-left: 3px solid $terziario;
+  padding: 0px $vertical-space-mini;
+  margin: 0;
 }
 blockquote.primary {
   font-size: $font-size-large;
@@ -97,5 +100,19 @@ img.img-full-responsive {
     height: auto;
     max-width: 100%;
     width: 100%;
+}
+
+
+// ********************************
+// Breadcrumbs
+// ********************************
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding: 0px;
+    h1, h2, h3, h4, h5 {
+      display: inline;
+    }
 }
 

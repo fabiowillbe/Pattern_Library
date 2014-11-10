@@ -56,13 +56,13 @@
 
 /* carousel caption */
 
-.owl-carousel .caption .capt-conteinar {
+#hero .caption .capt-conteinar {
 	padding: 5px 15px;
 	background: rgba( $secondario, .4 );
 	display: inline-block;
 }
 
-.owl-carousel .caption .capt-conteinar {
+#hero .caption .capt-conteinar {
 	h1,
 	h2,
 	h3 {
@@ -82,39 +82,42 @@
 
 
 
-.owl-carousel .container {
+#hero .container,
+#hero .cont {
 	display: table;
 	height: inherit;
 	padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.owl-carousel .caption {
+#hero .caption {
 	display: table-cell;
 }
-.owl-carousel .caption.vertical-center {
+#hero .caption.vertical-center {
 	vertical-align: middle;
 	padding-bottom: 0;
 }
-.owl-carousel .caption.vertical-top {
+#hero .caption.vertical-top {
 	vertical-align: top;
 	padding-top: 8vh;
 }
-.owl-carousel .caption.vertical-bottom {
+#hero .caption.vertical-bottom {
 	vertical-align: bottom;
 	padding-bottom: 30px;
 }
-.owl-carousel .caption.text-center {
+#hero .caption.text-center {
 	padding-left: 10%;
 	padding-right: 10%;
 }
-.owl-carousel .caption.text-left {
+#hero .caption.text-left {
 	padding-right: 10%;
 }
-.owl-carousel .caption.text-right {
+#hero .caption.text-right {
 	padding-left: 10%;
 }
-.owl-carousel .caption h1,
-.owl-carousel .caption p,
-.owl-carousel .caption div {
+#hero .caption h1,
+#hero .caption p,
+#hero .caption div {
 	position: relative;
 }
 
