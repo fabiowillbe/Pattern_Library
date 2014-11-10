@@ -103,7 +103,6 @@
 }
 
 
-
 // ********************************
 //  Vertical Margin
 // ********************************
@@ -146,6 +145,18 @@
 .row-bot-marg-micro {
 	margin-bottom: $vertical-space-mini;
 }
+
+
+
+// ********************************
+//  Orizontal Padding
+// ********************************
+
+.row-right-padd {
+	padding-right: $vertical-space-mini;
+}
+
+
 
 
 .row-title {
