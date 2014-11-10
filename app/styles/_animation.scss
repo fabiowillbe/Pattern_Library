@@ -1,0 +1,48 @@
+// ********************************
+// Div Animation
+// ********************************
+
+div.animawrap {
+  position: relative;
+  height: 280px;
+}
+
+div.ph3 {
+    background: url("../images/animation/ani01.jpg") no-repeat scroll 0 0 / 700px 2800px rgba(0, 0, 0, 0);
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 700px;
+}
+
+div.ph2 {
+    background: url("../images/animation/ani02.jpg") no-repeat scroll 0 0 / 700px 2800px rgba(0, 0, 0, 0);
+    float: right;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 700px;
+}
+
+div.ph1 {
+    background: url("../images/animation/ani03.jpg") no-repeat scroll 0 0 / 700px 2800px rgba(0, 0, 0, 0);
+    display: none;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 700px;
+}
+
+div.ph0 {
+    background: url("../images/animation/ani04.jpg") no-repeat scroll 0 0 / 700px 2800px rgba(0, 0, 0, 0);
+    display: none;
+    float: right;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 700px;
+}

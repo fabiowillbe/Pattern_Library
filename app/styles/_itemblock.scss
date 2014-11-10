@@ -484,6 +484,9 @@ ul.isotope-filter {
 	position: relative;
 	overflow: hidden;
 	transition: 600ms ease-out;
+	.itemimage {
+    	margin-top: 0px!important;
+	}
 	.itemtext {
 		position: absolute;
 		bottom: 0;
@@ -492,10 +495,9 @@ ul.isotope-filter {
 		background: rgba( $secondario, .4 );
 		color: $offwhite-color;
 	}
-	&:hover .itemimageBox {
+	&:hover .itemimage {
 		@include imageHoverAnimation (1.3, 600ms, ease-out);
 	}
 }
-
 
 

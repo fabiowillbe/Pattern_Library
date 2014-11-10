@@ -286,5 +286,165 @@ $(document).ready(function() {
 	
 	
 	
+
+	$('#animation2').hide();
+	$('#animation3').hide();
+	$('#animation4').hide();
+	$('#animation').jani({ frameWidth: 700, frameHeight: 280, speed: 20, totalFrames: 40, loop: true });
+        
+    $('a.staranim').click(function(){
+	    $('#animation').jani.play();
+        return false;
+    });
+    $( ".animawrap" ).hover(
+		function() {
+			$('#animation').jani.play();
+		}, function() {
+			$('#animation').jani.pause();
+		}
+	);
+
+
+
+
 	
 });
+
+
+
+
+/*
+	jAni jQuery Plugin
+	Â© 2009 ajaxBlender.com
+	For any questions please visit www.ajaxblender.com 
+	or email us at support@ajaxblender.com
+*/
+
+;(function($){
+	var settings = {}; 
+	var element = {};
+	var currFrame = 0;
+	var tm = null;
+	
+	$.fn.jani = function(sett){
+		element = $(this);
+		settings = $.extend({}, $.fn.jani.defaults, sett);
+        
+		function _build(){
+			element.width(settings.frameWidth);
+			element.height(settings.frameHeight);
+			element.css('background-position', '0 0');
+		};
+		
+		//    Entry point
+		_build();
+		
+		return this;
+	};
+
+	$.fn.jani.moving = false;
+	
+	$.fn.jani.pause = function(){
+		if(tm){ clearTimeout(tm); }
+		tm = null;
+	}
+	
+	$.fn.jani.stop = function(){
+		if(tm){ clearTimeout(tm); }
+		tm = null;
+		currFrame = 0;
+		element.css('background-position', '0 0');
+	}
+	
+	$.fn.jani.pause = function(){
+		clearTimeout( tm );
+		tm = null;
+	}
+	
+	$.fn.jani.play = function(){
+		$.fn.jani.moving = true;
+		if(settings.totalFrames <= 0 || !element || !element.length){ return; }
+		
+		function _animate(){
+			var tmFn = function(){ _animate(); };
+			var bgPos = element.css('background-position');
+			var ie = true;
+			
+			if(bgPos == 'undefined' || bgPos == null){
+				bgPos = parseInt(element.css('background-position-y'));
+			} else {
+                bgPos = bgPos.split(' ');
+                bgPos = parseInt(bgPos[1]);
+                ie = false;
+			}
+		
+			bgPos -= settings.frameHeight;
+			
+			if(ie){ element.css('background-position-y', bgPos + 'px'); } 
+			else { element.css('background-position', ('0px ' + bgPos + 'px')); }
+			
+			currFrame++;
+			
+			if( currFrame == 30 ){
+				element = $('#animation4');
+				element.css('background-position', '0 0');
+				$('#animation').hide();
+				$('#animation2').hide();
+				$('#animation3').hide();
+				$('#animation4').show();
+			}
+			
+			if( currFrame == 20 ){
+				element = $('#animation3');
+				element.css('background-position', '0 0');
+				$('#animation').hide();
+				$('#animation2').hide();
+				$('#animation3').show();
+				$('#animation4').hide();
+			}
+			
+			if( currFrame == 10 ){
+				element = $('#animation2');
+				element.css('background-position', '0 0');
+				$('#animation').hide();
+				$('#animation2').show();
+				$('#animation3').hide();
+				$('#animation4').hide();
+			}
+			
+			if(currFrame > (settings.totalFrames - 1)){
+				element = $('#animation');
+				currFrame = 0;
+				$('#animation').show();
+				$('#animation2').hide();
+				$('#animation3').hide();
+				$('#animation4').hide();
+				element.css('background-position', '0 0');
+				
+				if(!settings.loop){ $.fn.jani.moving = false;return; }
+			}
+			tm = setTimeout(tmFn, settings.speed);
+		}
+		
+		if(tm){ element.jani.stop(); }
+		_animate();
+	}
+	
+    /*  Default Settings  */
+    $.fn.jani.defaults = {
+        frameWidth:      100,
+        frameHeight:     100,
+        speed:           100,
+        totalFrames:     0,
+        loop:            true
+    };
+		
+})(jQuery);
+
+
+
+
+
+
+
+
