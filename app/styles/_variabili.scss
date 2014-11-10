@@ -178,3 +178,10 @@ $vertical-space: ceil(($navbar-height * 0.66666)) !default; // ~40px
 $vertical-space-mini: ceil(($navbar-height * 0.33333)) !default; // ~20px
 // Gutter per spaziatura container-wrapper
 $gutter-warapper:	30px;
+
+// ********************************
+//  BREADCRUMBS
+// ********************************
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "" !default;
+

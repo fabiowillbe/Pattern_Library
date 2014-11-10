@@ -476,5 +476,26 @@ ul.isotope-filter {
 }
 
 
+// ********************************
+//  itemBlock Image
+// ********************************
+
+.imageblock {
+	position: relative;
+	overflow: hidden;
+	transition: 600ms ease-out;
+	.itemtext {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: rgba( $secondario, .4 );
+		color: $offwhite-color;
+	}
+	&:hover .itemimageBox {
+		@include imageHoverAnimation (1.3, 600ms, ease-out);
+	}
+}
+
 
 

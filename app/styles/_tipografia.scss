@@ -39,6 +39,8 @@ h3, .h3 {
 }
 
 h4, .h4 { 
+  font-family: $font-titoli-secondaria;
+  font-weight: 300;
   font-size: $font-size-h4; 
   color: $gray-color;
 }
@@ -114,5 +116,19 @@ img.img-full-responsive {
     h1, h2, h3, h4, h5 {
       display: inline;
     }
+}
+
+// ********************************
+// Tipologie di pagine
+// ********************************
+.prod-digitale {
+    h1, .h1, h2, .h2 { 
+      font-family: $font-titoli-secondaria;
+    }
+    blockquote {
+      font-family: $font-primaria;
+    }
+
+
 }
 
