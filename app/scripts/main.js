@@ -334,6 +334,17 @@ $(document).ready(function() {
 
 
 
+    $('#resellerSearch').click(function (e) {
+		e.preventDefault();
+		$('#resellerMap').show();
+		document.getElementById('gmap').style.display="block";
+        initialize();
+		$('#resellerResult').show();
+	});
+
+
+
+
 	
 });
 

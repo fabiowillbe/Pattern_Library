@@ -6,7 +6,8 @@
 var centromappa = new google.maps.LatLng(41.869753,12.505682);
 
 var markers = [
-	   // ['Otium Romanum', 41.854267,12.505682, 'http://www.willbe.it/otiumromanum/images/marker/rosso.png', 'casa'],
+	   ['Furcht &amp; C.', 45.458232,9.178512, '/images/marker/rosso.png', 'xxx'],
+       ['Città della musica Srl', 42.402512,14.168429, '/images/marker/rosso.png', 'xxx'],
 ];
 
 var map;

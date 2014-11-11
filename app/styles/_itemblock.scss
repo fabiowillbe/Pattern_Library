@@ -507,5 +507,10 @@ ul.isotope-filter {
 
 #gmap {
 	width: 100%;
-	height: 350px;
+	height: 400px;
 }
+
+#resellerMap,
+#resellerResult {
+	display: none;
+} 
