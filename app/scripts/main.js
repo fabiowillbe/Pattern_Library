@@ -283,6 +283,33 @@ $(document).ready(function() {
 	/**********************/
 	/*  MixItUp Product   */
 	$('#mixItUpProduct').mixItUp();
+
+
+	$('.prod-loadmore-static').click(function (e) {
+		e.preventDefault();
+		alert('carica...');
+	});
+
+
+
+	/*$('.prod-loadmore').click(function (e) {
+		e.preventDefault();
+
+		//$('#mixItUpProduct').mixItUp('destroy');
+		
+		//$( ".mixItUpProductContainer" ).load( 'prod_loadmore.html' );
+		$.ajax({
+		  url: '/prod_loadmore.html',
+		  success: function(data) {
+		    $('.mixItUpProductContainer').html(data);
+		    $('.load').append(data);
+		  }
+		});
+
+		$('#mixItUpProduct').mixItUp('load');
+
+
+	});*/
 	
 	
 	

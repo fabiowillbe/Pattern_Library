@@ -219,32 +219,6 @@
 	}
 }
 
-.itemSearchOverlayBox {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	width: 100%;
-	height: 100%;
-	@include rgba-background($offwhite-color, 0.8);
-	padding-top: 100px;
-
-	a.itemSearchOverlayCloseBtn {
-		color: $secondario;
-		padding-right: 15px;
-		&:hover,
-		&:focus {
-			color: $primario;
-		}
-	}
-
-	.itemSearch {
-		margin-top: $vertical-space;
-		background: #f3f3f3;
-	}
-}
-
 #utilityBar.colored {
 	color: $secondario;
 	background: $gray-lighter-color;
@@ -290,7 +264,34 @@
 	fill: $secondario;
 }
 
+// ********************************
+// Search
+// ********************************
+.itemSearchOverlayBox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	@include rgba-background($offwhite-color, 0.8);
+	padding-top: 100px;
 
+	a.itemSearchOverlayCloseBtn {
+		color: $terziario;
+		padding-right: 15px;
+		&:hover,
+		&:focus {
+			color: $secondario;
+		}
+	}
+
+	.itemSearch {
+		margin-top: $vertical-space;
+		background: #f3f3f3;
+	}
+}
 
 
 
