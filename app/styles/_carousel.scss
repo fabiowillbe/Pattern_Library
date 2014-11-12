@@ -94,6 +94,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  & a.slider-download {
+    display: block;
+    color: $terziario;
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+    &:hover {
+      color: $offwhite-color;
+    }
+  }
 }
 #hero .caption {
 	display: table-cell;

@@ -68,6 +68,22 @@
 		c0,0.2,0.1,0.4,0.4,0.4h10.5c0.2,0,0.4-0.1,0.4-0.4v-0.6c0-0.2-0.1-0.4-0.4-0.4h-0.2c-2.5,0-3.3-2.6-2.8-4.1l1.3-3.5
 		c0.1-0.2,0.4-0.4,0.6-0.4h9.6c0.2,0,0.5,0.1,0.6,0.4l2.3,5.4c0.4,1.1-0.7,2.3-2.3,2.3h-0.1c-0.2,0-0.4,0.2-0.4,0.4v0.5
 		c0,0.2,0.2,0.4,0.4,0.4h13.5c0.2,0,0.4-0.1,0.4-0.4v-0.5C134.9,28.7,134.6,28.5,134.4,28.5"/> </g> </symbol></svg>
+
+
+		<!-- Modal Finto Link -->
+		<div class="modal fade" id="fakeLink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Link</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p class="lead text-center">Il link non è funzionante in quanto la pagina è un prototipo</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
     
 
     <div class="itemSearchOverlayBox">
@@ -91,15 +107,15 @@
     	<div class="container-fluid">
     		<div class="pull-left">
 	    		<ul class="social-list">
-	    			<li><a href="#"><i class="fa fa fa-youtube"></i></a></li>
-	    			<li><a href="#"><i class="fa fa fa-facebook"></i></a></li>
-	    			<li><a href="#"><i class="fa fa fa-twitter"></i></a></li>
-	    			<li><a href="#"><i class="fa fa fa-google-plus"></i></a></li>
-	    			<li><a href="#"><i class="fa fa fa-soundcloud"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-youtube"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-facebook"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-twitter"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-google-plus"></i></a></li>
+	    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-soundcloud"></i></a></li>
 	    		</ul>
 	    	</div>
 	    	<div class="pull-right">
-	    		<a class="" href="#">
+	    		<a class="" href="#" data-toggle="modal" data-target="#fakeLink">
 	    			<svg class="shape-logo-furcht">
   						<use xlink:href="#shape-furcht"></use>
 					</svg>
@@ -110,7 +126,7 @@
 	    	</div>
 	    	<div class="pull-right">
 
-	    		<a class="itemSearchBtn" href="#">
+	    		<a class="itemSearchBtn" href="#" data-toggle="modal" data-target="#fakeLink">
 	    			<i class="glyphicon glyphicon-search"></i>
 	    		</a>
 
@@ -157,10 +173,10 @@
 					<li class=""><a href="serie_k.html">Pianoforti Verticali</a></li>
 					<li class=""><a href="pianoforti_digitali.html">Pianoforti Digitali</a></li>
 					<li class=""><a href="pianoforti_anytime.html">Pianoforti Anytime</a></li>
-					<li class=""><a href="#">Supporto</a></li>
+					<li class=""><a href="#" data-toggle="modal" data-target="#fakeLink">Supporto</a></li>
 					<li class=""><a href="artisti.html">Artist page</a></li>
 					<li class=""><a href="rivenditori.html">Rivenditori Kawai</a></li>
-					<li class=""><a href="#">News ed eventi</a></li>
+					<li class=""><a href="#" data-toggle="modal" data-target="#fakeLink">News ed eventi</a></li>
 				</ul>
 			</div><!-- end navbar-collapse -->
     	</div><!-- container -->
@@ -173,8 +189,8 @@
     		<div class="col-sm-9 col-md-9 col-lg-6 col-lg-offset-2 row-top-padd-micro">
     			<ol class="breadcrumb">
     				<li><a href="index.html"><h3>Home</h3></a></li>
-    				<li><a href="#"><h3 class="vert-spacer" >Pianoforti digitali</h3></a></li>
-    				<li><a href="#"><h3 class="vert-spacer" >Stage Piano</h3></a></li>
+    				<li><a href="pianoforti_digitali.html"><h3 class="vert-spacer">Pianoforti digitali</h3></a></li>
+    				<li><a href="serie_mp.html"><h3 class="vert-spacer">Stage Piano</h3></a></li>
 	    		</ol>
     		</div>
     		<div class="col-sm-3 col-md-3 col-lg-2 row-top-padd-micro">
@@ -273,7 +289,15 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 															</div>
 															
 														</div><!-- /.caption -->
+
+														<a class="slider-download" href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-2x fa-download"></i></a>
+
 													</div><!-- /.container -->
+
+
+
+
+
 												</div><!-- /.item -->
 												
 												<div class="item" style="background-image: url(/images/prodotti/slider/MP11_location102.jpg);">
@@ -285,6 +309,9 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 															</div>
 															
 														</div><!-- /.caption -->
+
+														<a class="slider-download" href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-2x fa-download"></i></a>
+
 													</div><!-- /.container -->
 												</div><!-- /.item -->
 												
@@ -297,6 +324,9 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 															</div>
 															
 														</div><!-- /.caption -->
+
+														<a class="slider-download" href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-2x fa-download"></i></a>
+
 													</div><!-- /.container -->
 												</div><!-- /.item -->
 
@@ -309,6 +339,9 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 															</div>
 															
 														</div><!-- /.caption -->
+
+														<a class="slider-download" href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-2x fa-download"></i></a>
+														
 													</div><!-- /.container -->
 												</div><!-- /.item -->
 
@@ -520,7 +553,8 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 													<div class="col-sm-12 col-md-8">
 														<p>Il miglior pianoforte digitale si distingue per tre principali qualità: tastiera, suono, e controllo. Ma avere ulteriori funzioni significa per il compositore poter personalizzare gli effetti sonori. Ogni funzione aggiuntiva nei pianoforti Kawai ha un suo chiaro compito che consente di migliorare sulla qualità del suono. Sono caratteristiche utili che i musicisti useranno giornalmente.</p>
 													</div>
-
+												</div>
+												<div class="row">
 													<div class="col-xs-12 col-sm-12 col-md-4 row-top-padd-mini">
 														<div class="itemblock imageblock">
 															<div class="itemimageBox">
@@ -567,7 +601,7 @@ Questo nuovo modello rende migliore l’interfaccia di controllo, offrendo gran 
 												<div class="row">
 													<div class="col-sm-12 col-md-12">
 														<div class="itemimageBox">
-													  		<img class="img-responsive itemimage" src="/images/features/design_MP11_styling_exploded.jpg">
+													  		<img class="img-responsive itemimage nozoom" src="/images/features/design_MP11_styling_exploded.jpg">
 													  	</div>
 													</div>
 													<div class="itemsubtitle col-sm-12 col-md-12">
@@ -872,8 +906,8 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Kawai USB Driver</h5>
 												</div>
 												<div class="col-sx-8 col-sm-4 col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-windows"></i> Windows 32bit</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-windows"></i> Windows 64bit</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-windows"></i> Windows 32bit</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-windows"></i> Windows 64bit</a>
 												</div>
 											</div>
 											<div class="row">
@@ -881,12 +915,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Driver esempio</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 										</div>
@@ -898,7 +932,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Driver esempio</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-apple"></i> MAC</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-apple"></i> MAC</a>
 												</div>
 											</div>
 										</div>
@@ -917,12 +951,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Brochure uno</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 											<div class="row row-v-padding-mini">
@@ -930,12 +964,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Brochure due</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 										</div>
@@ -953,12 +987,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Manuale uno</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 											<div class="row">
@@ -966,12 +1000,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Manuale due</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 											<div class="row">
@@ -979,12 +1013,12 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													<h5>Manuale tre</h5>
 												</div>
 												<div class="col-md-9">
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> EN</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> DE</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> FR</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> ES</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> IT</a>
-													<a class="btn btn-kawai-primary btn-mini"><i class="fa fa-download"></i> JP</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> EN</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> DE</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> FR</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> ES</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> IT</a>
+													<a class="btn btn-kawai-primary btn-mini" data-toggle="modal" data-target="#fakeLink"><i class="fa fa-download"></i> JP</a>
 												</div>
 											</div>
 										</div>
@@ -1003,9 +1037,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1015,9 +1049,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1027,9 +1061,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1039,9 +1073,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1051,9 +1085,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1063,9 +1097,9 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 													  	  <img class="img-responsive itemimage" src="images/img-base.jpg">
 													</div>
 													<div class="itemtext">
-														<a class="btn btn-kawai-primary btn-xs">1280x800</a>
-														<a class="btn btn-kawai-primary btn-xs">1680x1050</a>
-														<a class="btn btn-kawai-primary btn-xs">1920x1200</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1280x800</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1680x1050</a>
+														<a class="btn btn-kawai-primary btn-xs" data-toggle="modal" data-target="#fakeLink">1920x1200</a>
 													</div>
 												</div>
 											</div>
@@ -1098,55 +1132,79 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 			</div>
 			
 			<div class="col-xs-12">
-				<div class="row row-no-gutter">
-			
-			
-					<div class="col-xs-6 col-md-3">
-					  	<a href="prodotto.html" class="itemblock artistblock">
+				<div class="row row-no-gutter">	        
+		        	<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="classico">
+					  	<a href="artista.html" class="itemblock noborder">
 					  	  <div class="itemimageBox">
-						  	<img class="img-responsive itemimage" src="/images/artisti/img-base.jpg">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
 						  </div>
 						  <div class="itemtext">
-						  	  <span class="iteminfo">Classici</span>
-							  <span class="itemtitle">Nome e cognome</span>
+						  	  <span class="iteminfo">Maurizio Baglini</span>
+							  <span class="itemtitle">Classico</span>
 						  </div>
 						</a><!-- Fine itemBlock -->
 					</div>
-					<div class="col-xs-6 col-md-3">
-					  	<a href="prodotto.html" class="itemblock artistblock">
-						  <div class="itemimageBox">
-						  	<img class="img-responsive itemimage" src="/images/artisti/img-base.jpg">
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="digitale">
+					  	<a href="artista.html" class="itemblock noborder">
+					  	  <div class="itemimageBox">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
 						  </div>
 						  <div class="itemtext">
-						  	  <span class="iteminfo">Classici</span>
-							  <span class="itemtitle">Nome e cognome</span>
+						  	  <span class="iteminfo">Alessandra Maria Ammara</span>
+							  <span class="itemtitle">Digitale</span>
 						  </div>
 						</a><!-- Fine itemBlock -->
 					</div>
-					<div class="col-xs-6 col-md-3">
-					  	<a href="prodotto.html" class="itemblock artistblock">
-						  <div class="itemimageBox">
-						  	<img class="img-responsive itemimage" src="/images/artisti/img-base.jpg">
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="classico">
+					  	<a href="artista.html" class="itemblock noborder">
+					  	  <div class="itemimageBox">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
 						  </div>
 						  <div class="itemtext">
-						  	  <span class="iteminfo">Classici</span>
-							  <span class="itemtitle">Nome e cognome</span>
+						  	  <span class="iteminfo">Giuseppe Andaloro</span>
+							  <span class="itemtitle">Classico</span>
 						  </div>
 						</a><!-- Fine itemBlock -->
 					</div>
-					<div class="col-xs-6 col-md-3">
-					  	<a href="prodotto.html" class="itemblock artistblock">
-						  <div class="itemimageBox">
-						  	<img class="img-responsive itemimage" src="/images/artisti/img-base.jpg">
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="classico">
+					  	<a href="artista.html" class="itemblock noborder">
+					  	  <div class="itemimageBox">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
 						  </div>
 						  <div class="itemtext">
-						  	  <span class="iteminfo">Classici</span>
-							  <span class="itemtitle">Nome e cognome</span>
+						  	  <span class="iteminfo">Alice Baccalini</span>
+							  <span class="itemtitle">Classico</span>
 						  </div>
 						</a><!-- Fine itemBlock -->
 					</div>
-					
-				</div>
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="digitale">
+					  	<a href="artista.html" class="itemblock noborder">
+					  	  <div class="itemimageBox">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
+						  </div>
+						  <div class="itemtext">
+						  	  <span class="iteminfo">Andrea Bacchetti</span>
+							  <span class="itemtitle">Digitale</span>
+						  </div>
+						</a><!-- Fine itemBlock -->
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-filter="digitale">
+					  	<a href="artista.html" class="itemblock noborder">
+					  	  <div class="itemimageBox">
+						  	  <img class="img-responsive itemimage" src="/images/artisti/baglini.jpg">
+						  </div>
+						  <div class="itemtext">
+						  	  <span class="iteminfo">Vincenzo Balzani</span>
+							  <span class="itemtitle">Digitale</span>
+						  </div>
+						</a><!-- Fine itemBlock -->
+					</div>
+		        </div><!-- Fine row -->
 			</div>
 			
 			<div class="col-xs-12">
@@ -1168,7 +1226,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 	    	<div class="col-xs-12">
 				<div class="row row-no-gutter">
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 					  	  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/RX-5.jpg">
 						  </div>
@@ -1179,7 +1237,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						</a><!-- Fine itemBlock -->
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 						  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/GX-7.jpg">
 						  </div>
@@ -1190,7 +1248,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						</a><!-- Fine itemBlock -->
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 						  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/CL36B_front.jpg">
 						  </div>
@@ -1201,7 +1259,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						</a><!-- Fine itemBlock -->
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 						  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/MP11.jpg">
 						  </div>
@@ -1212,7 +1270,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						</a><!-- Fine itemBlock -->
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 						  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/GM10.jpg">
 						  </div>
@@ -1223,7 +1281,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						</a><!-- Fine itemBlock -->
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-					  	<a href="prodotto.html" class="itemblock productblock">
+					  	<a href="#" class="itemblock productblock" data-toggle="modal" data-target="#fakeLink">
 						  <div class="itemimageBox">
 						  	  <img class="img-responsive itemimage" src="images/prodotti/K-600_EP_styling.jpg">
 						  </div>
@@ -1257,14 +1315,14 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						<div class="foot-cont">
 							<h4>MONDO KAWAI</h4>
 							<ul>
-								<li><a href="#">Pianoforti a coda</a></li>
-								<li><a href="#">Pianoforti verticali</a></li>
-								<li><a href="#">Pianoforti anytime</a></li>
-								<li><a href="#">Pianoforti digitali</a></li>
-								<li><a href="#">Supporto</a></li>
-								<li><a href="#">Artist page</a></li>
-								<li><a href="#">Rivenditori Kawai</a></li>
-								<li><a href="#">News ed eventi</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Pianoforti a coda</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Pianoforti verticali</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Pianoforti anytime</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Pianoforti digitali</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Supporto</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Artist page</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Rivenditori Kawai</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">News ed eventi</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1272,10 +1330,10 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 						<div class="foot-cont">
 							<h4>Kawai Worldwide</h4>
 							<ul>
-								<li><a href="#">Kawai Global</a></li>
-								<li><a href="#">Kawai Giappone</a></li>
-								<li><a href="#">Kawai Germania</a></li>
-								<li><a href="#">Kawai Usa</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Kawai Global</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Kawai Giappone</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Kawai Germania</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#fakeLink">Kawai Usa</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1296,7 +1354,7 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 		<div class="container">
 				<div class="row row-top-padd">
 					<div class="text-center col-md-12">
-						<a class="kawai-footer" href="#">
+						<a class="kawai-footer" href="#" data-toggle="modal" data-target="#fakeLink">
 							<svg class="shape-logo-kawai">
 		  						<use xlink:href="#shape-kawai"></use>
 							</svg>
@@ -1304,15 +1362,15 @@ Suonateli “puliti”, o applicate gli oltre 100 diversi effetti, prima di proc
 					</div>
 					<div class="text-center col-md-12">
 						<ul class="social-list">
-			    			<li><a href="#"><i class="fa fa fa-youtube"></i></a></li>
-			    			<li><a href="#"><i class="fa fa fa-facebook"></i></a></li>
-			    			<li><a href="#"><i class="fa fa fa-twitter"></i></a></li>
-			    			<li><a href="#"><i class="fa fa fa-google-plus"></i></a></li>
-			    			<li><a href="#"><i class="fa fa fa-soundcloud"></i></a></li>
+			    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-youtube"></i></a></li>
+			    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-facebook"></i></a></li>
+			    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-twitter"></i></a></li>
+			    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-google-plus"></i></a></li>
+			    			<li><a href="#" data-toggle="modal" data-target="#fakeLink"><i class="fa fa fa-soundcloud"></i></a></li>
 			    		</ul>     
 					</div>
 					<div class="text-center col-md-12">
-						<p>Copyright © 2014 <a href="http://www.furcht.it" target="blank">Furcht S.p.A.</a> / tutti i diritti riservati.</p>
+						<p>Copyright © 2014 <a href="http://www.furcht.it" target="blank">Furcht S.p.a.</a> / tutti i diritti riservati.</p>
 					</div>
 				</div>
 			</div>

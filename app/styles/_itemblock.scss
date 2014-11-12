@@ -45,6 +45,9 @@
 		&:hover {
 			@include imageHoverAnimation (1.3, 600ms, ease-out);
 		}
+		&.nozoom:hover {
+			@include imageHoverAnimation (1, 600ms, ease-out);
+		}
 	}
 	.itemtitle {
 		@include textChangeColor (600ms, ease-out);

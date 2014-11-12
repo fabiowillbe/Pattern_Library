@@ -268,7 +268,7 @@ $(document).ready(function() {
 
 	/**********************/
 	/*  SearchOverlay     */
-	$('a.itemSearchBtn').click(function (e) {
+	/*$('a.itemSearchBtn').click(function (e) {
 		e.preventDefault();
 		$('.itemSearchOverlayBox').fadeIn(300, 'easeInCubic');
 	});
@@ -276,7 +276,7 @@ $(document).ready(function() {
 	$('a.itemSearchOverlayCloseBtn').click(function (e) {
 		e.preventDefault();
 		$('.itemSearchOverlayBox').fadeOut(300, 'easeInCubic');
-	});
+	});*/
 	
 	
 	
