@@ -14,6 +14,9 @@
 	/*background: $offwhite-color;*/
 	background: transparent;
 	margin-bottom: $vertical-space-mini;
+	&.noborder {
+		border: none;
+	}
 	.itemimage {
 	
 	}
@@ -408,7 +411,7 @@ ul.isotope-filter {
 	    font-size: $font-size-large;
     }
 
-    a {
+    .featured-content a {
     	color: $terziario;
     	&:hover,
     	&:focus {
