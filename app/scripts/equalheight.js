@@ -56,8 +56,19 @@ $.fn.eqHeights = function(options) {
 // can't have the same pattern for some reason or it scans the page and makes all the same height. Each row should be separate but it doesn't work that way.
 $(window).load(function() {
 
-  $('[class*="eq-"]').eqHeights();
-  //$('.videoContent [class*="eq-"]').eqHeights({parentSelector:'.videoContent'});
+  
+  //$('[class*="eq-"]').eqHeights({parentSelector:'.equalHeightWrap'});
   //$('.foo2 [class*="eq-"]').eqHeights();
+
+
+  // Permette di aggiungere un tasto ancorato in basso
+  // .pushBottom è la classe che ancora il btn in basso
+  // Aggiunge al div equalHeight un padding bottom uguale all'altezza del btn
+  // La funzione equalHeight va richiamata dopo
+  $('.equalHeightWrap').each(function(){
+     var pad = $(this).children('.pushBottom').outerHeight();
+     $(this).css('padding-bottom', pad + 'px');
+  });
+  $('[class*="eq-"]').eqHeights();
 
 }); 

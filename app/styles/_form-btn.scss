@@ -82,3 +82,18 @@ fieldset {
 .btn-kawai-secondary {
   @include button-variant-kawai($btn-primary-color, $terziario);
 }
+
+// Ancorare btn al fondo dell'item
+// --------------------------------------------------
+
+.equalHeightWrap {
+  position: relative;
+}
+
+.pushBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
