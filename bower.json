@@ -11,7 +11,8 @@
     "isotope": "~2.0.1",
     "typekit-load": "~0.1.2",
     "mixitup2": "~2.1.7",
-    "salvattore": "~1.0.7"
+    "salvattore": "~1.0.7",
+    "elevatezoom": "~2.2.3"
   },
   "version": "0.0.0",
   "authors": [

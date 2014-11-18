@@ -343,7 +343,10 @@ $(document).ready(function() {
 	});
 
 
-
+    // $('#imgzoom').elevateZoom({
+    // 	zoomType: "inner", 
+    // 	cursor: "crosshair"
+    // });
 
 	
 });
