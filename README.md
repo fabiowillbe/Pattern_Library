@@ -1,3 +1,4 @@
 Pattern_Library
 ===============
-Bower install
+bower install
+npm install
